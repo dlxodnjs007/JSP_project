@@ -1,0 +1,33 @@
+05-Oct-2022 14:03:10.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+05-Oct-2022 14:03:10.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+05-Oct-2022 14:03:10.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+05-Oct-2022 14:03:10.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+05-Oct-2022 14:03:10.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+05-Oct-2022 14:03:10.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+05-Oct-2022 14:03:10.738 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+05-Oct-2022 14:03:10.738 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+05-Oct-2022 14:03:10.738 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+05-Oct-2022 14:03:10.741 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+05-Oct-2022 14:03:10.876 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+05-Oct-2022 14:03:10.888 INFO [main] org.apache.catalina.startup.Catalina.load [309] 밀리초 내에 서버가 초기화되었습니다.
+05-Oct-2022 14:03:10.914 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+05-Oct-2022 14:03:10.914 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+05-Oct-2022 14:03:11.107 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+05-Oct-2022 14:03:11.125 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [17] 밀리초에 완료되었습니다.
+05-Oct-2022 14:03:11.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+05-Oct-2022 14:03:11.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+05-Oct-2022 14:03:11.144 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+05-Oct-2022 14:03:11.183 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [294] 밀리초 내에 시작되었습니다.

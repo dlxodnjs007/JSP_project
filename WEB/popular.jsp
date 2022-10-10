@@ -1,64 +1,50 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="EUC-KR">
+	<meta charset="UTF-8">
 	<title>Insert title here</title>
     <link href="./css/base.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
+    <%
+        String user_id = null;
+        if(session.getAttribute("user_id") != null) {
+            user_id = (String) session.getAttribute("user_id");
+        }
+    %>
 	<div id="wrap">
         <!-- header -->
         <div id="header">
             <div id="gnb-top" class="bg-season"
                 style="display: block; background: url('./images/logo.png') no-repeat center 0;">
                 <div class="gnb-fix-area">
-                    <h1 class="logo-link"><a href="./main.jsp">Ω«≥ª ∏∂Ω∫≈© ∞≠ø‰ √∂∆Û</a></h1>
+                    <h1 class="logo-link"><a href="./main.jsp">Ïò§ÏßÅ ÎÜçÍµ¨ only basketball</a></h1>
                 </div>
-                <script src="/js/search.js?202292"></script>
-
             </div>
             <!-- GNB -->
             <div id="gnb">
-
                 <ul id="menu" class="gnb-list drop-menu">
-                    <li><a href="./popular.jsp">¿Œ±‚±€</a>
-                    </li>
-                    <li><a href="./general.jsp">¿⁄¿Ø∞‘Ω√∆«</a>
-                    </li>
+                    <li><a href="./popular.jsp">Ïò§ÏßÅÏù∏Í∏∞</a></li>
+                    <li><a href="./general.jsp">Ïò§ÏßÅÏª®ÌÖêÏ∏†</a></li>
+                    <li><a href="./matching.jsp">Ïò§ÏßÅÎß§Ïπ≠</a></li>
+                    <li><a href="./market.jsp">Ïò§ÏßÅÍ±∞Îûò</a></li>
+                    <li><a href="./gym.jsp">Ïò§ÏßÅÎåÄÍ¥Ä</a></li>
                 </ul>
-                <script>
-                    $(function () {
-                        var link = location.pathname;
-
-                        $(".top_menu_sub").each(function () {
-                            var obj = $(this);
-                            if ($(this).find("a").attr("focus-id") == "4044bfe31de72a1de22410b74a17b58f") {
-                                obj.addClass("on");
-
-                            }
-                        });
-                    });
-                </script>
-                <div id="pd-menu" class="pulldown-wrap">
-
-                </div>
             </div>
             <!-- //GNB -->
-			<div style="text-align:center; margin: 10px auto;">
-				<span>«ˆ¿Á <span style="color:#E93F0B;">12342</span> ∏Ì¿« ªÁ∂˜µÈ¿Ã <span style="color:#E93F0B;">Ω«≥ª ∏∂Ω∫≈© «ÿ¡¶</span>∏¶ ø‰±∏«’¥œ¥Ÿ.</span>
-			</div>
         </div>
         <!-- //header -->
         <!-- container -->
         <div id="container">
-            <!-- ∫ªπÆ -->
+            <!-- ???? -->
             <div id="content-wrap">
                 <div class="board-wrap">
-                    <!-- ∏Ò∑œ -->
+                    <!-- ??? -->
                     <div class="board-list">
 
                         <script src="/js/board/thumb.js?202292"></script>
@@ -82,23 +68,23 @@
                         <script src="/oa/ad_bbs_list.js?202292"></script>
 
                         <div class="board-header">
-                            <h2><a href="./popular.jsp">¿Œ±‚±€</a><span class="ico-bookmark" data-mid="ilbe"
-                                    data-name="¿Œ±‚±€" onclick="bookmark(this)"></span></h2>
+                            <h2><a href="./popular.jsp">?Œ±??</a><span class="ico-bookmark" data-mid="ilbe"
+                                    data-name="?Œ±??" onclick="bookmark(this)"></span></h2>
                         </div>
                         <ul class="board-body">
                             <li class="title-line">
-                                <span class="count">π¯»£</span>
-                                <span class="nick">¥–≥◊¿”</span>
-                                <span class="date list_sort " data-order="date" style="cursor: pointer;">≥Ø¬•</span>
+                                <span class="count">???</span>
+                                <span class="nick">?–≥???</span>
+                                <span class="date list_sort " data-order="date" style="cursor: pointer;">???</span>
                             </li>
                             <li>
 
                                 <span class="count">847,729</span>
 
                                 <span class="title ">
-                                    <a href="/view/11438123217" class="subject ">test¡¶∏Ò</a>
+                                    <a href="/view/11438123217" class="subject ">test????</a>
                                 </span>
-                                <span class="global-nick nick">test¥–≥◊¿”</span>
+                                <span class="global-nick nick">test?–≥???</span>
 
                                 <span class="date">00:07:16</span>
                             </li>
@@ -108,10 +94,10 @@
                         <div class="post-btn-wrap">
                             <div class="btn-left">
                                 <button type="button" onclick="location.href='/list/ilbe'" id="list_back"
-                                    class="btn-default"><span>∏Ò∑œ</span></button>
+                                    class="btn-default"><span>???</span></button>
                             </div>
                             <div class="paginate">
-                                <a href="javascript:;" onclick="searchList(1)" class="prev"><span></span>¿Ã¿¸</a>
+                                <a href="javascript:;" onclick="searchList(1)" class="prev"><span></span>????</a>
                                 <a href="javascript:;" onclick="searchList(1)" class="page-on">1</a>
                                 <a href="javascript:;" onclick="searchList(2)">2</a>
                                 <a href="javascript:;" onclick="searchList(3)">3</a>
@@ -122,7 +108,7 @@
                                 <a href="javascript:;" onclick="searchList(8)">8</a>
                                 <a href="javascript:;" onclick="searchList(9)">9</a>
                                 <a href="javascript:;" onclick="searchList(10)">10</a>
-                                <a href="javascript:;" onclick="searchList(11)" class="next">¥Ÿ¿Ω<span></span></a>
+                                <a href="javascript:;" onclick="searchList(11)" class="next">????<span></span></a>
                                 <a href="javascript:;" style="display:none;" onclick="searchList(2)"
                                     class="accesskey_118" accesskey="v"></a>
                             </div>
@@ -146,7 +132,7 @@
                         </script>
 
                     </div>
-                    <!-- //∏Ò∑œ -->
+                    <!-- //??? -->
 
 
 
@@ -156,76 +142,57 @@
 
             </div>
 
-            <!-- //∫ªπÆ -->
+            <!-- //???? -->
 
             <!-- aside -->
             <div id="aside-wrap">
-                <div id="event-notice" class="event-wrap">
-                    <div class="event-header">
-                        <h3>ªı∑ŒøÓ æÀ∏≤<span class="notify-count"></span></h3>
-                        <div class="btn-set"><button class="event-delete" onclick="deleteNotiAll()"
-                                title="æÀ∏≤ ¿¸√º ªË¡¶">¿¸√ºªË¡¶</button><button class="event-close"
-                                onclick="hideNotifyList()">¥›±‚</button></div>
-                    </div>
-                    <div class="event-container" id="notice_list_wrap">
-                        <ul id="notify_list">
-                        </ul>
-                    </div>
-
-                </div>
                 <div id="rightside">
-                    <!-- login -->
-                    <script src="/js/jquery/jquery.validate.min.js?202292"></script>
-                    <script src="/js/jquery/additional-methods.min.js?202292"></script>
-                    <script src="/js/jquery/messages_ko.min.js?202292"></script>
-                    <script src="/js/jquery/validator_method.js?202292"></script>
-                    <script src="/js/member/member.js?202292"></script>
-                    <script>
-                        window.rightside = true;
-                        loginProc.loadVaild("#loginForm", false);
-
-                    </script>
+                    <%
+                        if(user_id == null) {
+                    %>
                     <div class="login-wrap">
-                        <form onsubmit="return false" id="loginForm" method="post" accept-charset="utf-8"
-                            novalidate="novalidate">
-                            <div class="login-set">
+                        <form id="loginForm" method="post" action="loginAction.jsp" accept-charset="utf-8">
+                            <!-- onsubmit="return false" -->
+                            <!-- <div class="login-set">
                                 <span class="login-chk"><input type="checkbox" class="chk-lock" id="autoLogin"
                                         name="autoLogin" value="Y"><label for="autoLogin"><span
-                                            class="ico-chk"></span>∑Œ±◊¿Œ ªÛ≈¬ ¿Ø¡ˆ</label></span>
+                                            class="ico-chk"></span>Î°úÍ∑∏Ïù∏ ÏÉÅÌÉú Ïú†ÏßÄ</label></span>
                                 <span class="check_security"></span>
-                            </div>
+                            </div> -->
                             <div class="login-box">
-                                <span><input type="text" placeholder="æ∆¿Ãµ" name="user_id"><input type="password"
-                                        name="password" placeholder="∫Òπ–π¯»£"></span>
-                                <button type="submit"><span>∑Œ±◊¿Œ</span></button>
+                                <span>
+                                    <input type="text" name="user_id" placeholder="ÏïÑÏù¥Îîî" >
+                                    <input type="password" name="password" placeholder="ÎπÑÎ∞ÄÎ≤àÌò∏">
+                                </span>
+                                <button type="submit"><span>Î°úÍ∑∏Ïù∏</span></button>
                             </div>
                         </form>
-                        <div class="user-util"><a href="/member/joinform">»∏ø¯∞°¿‘</a><a href="/member/find/id">æ∆¿Ãµ°§∫Òπ–π¯»£
-                                √£±‚</a></div>
+                        <div class="user-util">
+                            <a href="/join.jsp">ÌöåÏõêÍ∞ÄÏûÖ</a>
+                            <a href="/member/find/id">ÏïÑÏù¥Îîî¬∑ÎπÑÎ∞ÄÎ≤àÌò∏ Ï∞æÍ∏∞</a>
+                        </div>
                     </div>
+                    <%
+                        } else {
+                    %>
+                    <div class="logout-wrap">
+                            <div class="logout-box">
+                                <button type="button"><a href="logoutAction.jsp">ÌöåÏõêÍ¥ÄÎ¶¨</a></button>
+                                <button type="button"><a href="logoutAction.jsp">Î°úÍ∑∏ÏïÑÏõÉ</a></button>
+                            </div>
+                    </div>
+                    <%
+                        }
+                    %>
                     <!-- //login -->
-
-
-                    <script>
-                        window.arrayId = [];</script>
-
-
-                    <!-- Ω∫≈©∑¶ -->
-                    <!-- <div class="aside-section">
-                    </div> -->
-                    <!-- //Ω∫≈©∑¶ -->
-
                 </div>
             </div>
             <!-- //aside -->
 
         </div>
         <!-- //container -->
-
-
         <!-- footer -->
         <div id="footer">
-
         </div>
         <!-- //footer -->
     </div>

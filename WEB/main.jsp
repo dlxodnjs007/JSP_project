@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter"%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -14,6 +15,12 @@
 </head>
 
 <body>
+    <%
+        String user_id = null;
+        if(session.getAttribute("user_id") != null) {
+            user_id = (String) session.getAttribute("user_id");
+        }
+    %>
     <div id="wrap">
         <!-- header -->
         <div id="header">
@@ -105,28 +112,47 @@
             <div id="aside-wrap">
                 <div id="rightside">
                     <!-- login -->
-                    <script>
+                    <!-- <script>
                         window.rightside = true;
                         loginProc.loadVaild("#loginForm", false);
-                    </script>
+                    </script> -->
+                    <%
+                        if(user_id == null) {
+                    %>
                     <div class="login-wrap">
-                        <form onsubmit="return false" id="loginForm" method="post" accept-charset="utf-8"
-                            novalidate="novalidate">
-                            <div class="login-set">
+                        <form id="loginForm" method="post" action="loginAction.jsp" accept-charset="utf-8">
+                            <!-- onsubmit="return false" -->
+                            <!-- <div class="login-set">
                                 <span class="login-chk"><input type="checkbox" class="chk-lock" id="autoLogin"
                                         name="autoLogin" value="Y"><label for="autoLogin"><span
                                             class="ico-chk"></span>로그인 상태 유지</label></span>
                                 <span class="check_security"></span>
-                            </div>
+                            </div> -->
                             <div class="login-box">
-                                <span><input type="text" placeholder="아이디" name="user_id"><input type="password"
-                                        name="password" placeholder="비밀번호"></span>
+                                <span>
+                                    <input type="text" name="user_id" placeholder="아이디" >
+                                    <input type="password" name="password" placeholder="비밀번호">
+                                </span>
                                 <button type="submit"><span>로그인</span></button>
                             </div>
                         </form>
-                        <div class="user-util"><a href="/member/joinform">회원가입</a><a href="/member/find/id">아이디·비밀번호
-                                찾기</a></div>
+                        <div class="user-util">
+                            <a href="/join.jsp">회원가입</a>
+                            <a href="/member/find/id">아이디·비밀번호 찾기</a>
+                        </div>
                     </div>
+                    <%
+                        } else {
+                    %>
+                    <div class="logout-wrap">
+                            <div class="logout-box">
+                                <button type="button"><a href="logoutAction.jsp">회원관리</a></button>
+                                <button type="button"><a href="logoutAction.jsp">로그아웃</a></button>
+                            </div>
+                    </div>
+                    <%
+                        }
+                    %>
                     <!-- //login -->
                 </div>
             </div>

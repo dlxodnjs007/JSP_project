@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* 공통 */
 
-
-
 .red-1{color: #bb0000;}
 .hide{display:none !important;}
 .bold{font-weight:bold;}
@@ -10,10 +8,8 @@
 #wrap{width: 100%; min-width: 1110px;}
 #header{min-width: 1100px;}
 
-
 .my-alram{display: none; position: fixed; min-width: 160px; min-height: 42px; top: 50%; left: 50%; z-index: 10; transform: translateX(-50%) translateY(-50%);}
 .my-alram p{border: 1px solid #a9d0ff; box-shadow: 1px 1px 1px 0px #eeeeee; border-radius: 4px; background: #fff; padding: 10px; color: #2d8cff; text-align: center;}
-
 
 .bg-season{height: 92px;}
 .gnb-fix-area{width: 1100px; height: 92px; margin:0 auto; position: relative;}
@@ -39,7 +35,7 @@
 .gnb-list:after{content: ""; display: block; clear: both;}
 .gnb-list > li{position: relative; float: left; font-size: 0;}
 .gnb-list > li:after{content: ""; display: inline-block; width: 1px; height: 13px; background: #ffffff; vertical-align: middle;}
-.gnb-list > li > a{display: inline-block; color: #ffffff; height: 36px; line-height: 36px; padding:0 18px; font-weight: bold; font-size: 12px; vertical-align: middle;}
+.gnb-list > li > a {display: inline-block; color: #ffffff; height: 36px; line-height: 36px; padding:0 18px; font-weight: bold; font-size: 12px; vertical-align: middle;}
 .gnb-list > li > .menu-ad1{position: relative; color: #ffae20; padding: 0 24px;}
 .gnb-list > li > .menu-ad1 .ico-new{position: absolute; top: 6px; margin-left: 5px; width: 9px; height: 9px; background: url('./img/icon_common.png') no-repeat -259px -32px;}
 
@@ -84,6 +80,9 @@
 
 
 .drop-menu li a:hover{text-decoration: none; background: #cc3305;}
+.drop-menu li a:active {
+	background: #cc3305;
+}
 .drop-menu li.on a{background: #111111 url('./img/icon_menu_on.png') no-repeat 12px 50%; padding-left: 36px;}
 
 
@@ -135,6 +134,17 @@
 .login-box span input{width: 111px; height: 26px; border: 1px solid #ececec; text-indent: 5px; line-height: 28px;}
 .login-box span input[type="password"]{margin-top: -1px;}
 .login-box button{position: absolute; top: 0; right: 0; width: 70px; height: 55px; border: 1px solid #ececec; background: #fff; font-size: 11px; font-weight: bold;}
+.logout-wrap {
+	margin: 10px 5px 0;
+	overflow: hidden;
+}
+.logout-box button{
+	width: 70px;
+	height: 55px;
+	border: 1px solid #ececec;
+	background: #ef222a;
+	font-size: 11px;
+	font-weight: bold;}
 .user-util{text-align: center; margin-top: 11px;}
 .user-util a{display: inline-block; font-size: 11px;}
 .user-util a:first-child{margin-right: 14px;}
@@ -273,8 +283,8 @@
 .btn-default span.btn-next:after{content: ""; display: inline-block; width: 4px; height: 7px; background: url('./img/icon_rightArrow.gif') no-repeat left top; vertical-align: middle; margin: -2px 0 0 5px;}
 
 
-.btn-orange-big{position: relative; display: inline-block; background: url('./img/btn_common.png') no-repeat left -268px; margin-left: 2px;}
-.btn-orange-big span{position: relative; display: inline-block; top: 0; left: 2px; height: 33px; background: url('./img/btn_common.png') no-repeat 100% -268px;}
+.btn-orange-big{position: relative; display: inline-block; background: #E93F0B; border-radius: 10px;}
+.btn-orange-big span{position: relative; display: inline-block; top: 0; height: 33px;}
 .btn-orange-big span em{display: inline-block; padding: 11px 18px 0; color: #fff;}
 
 .btn-orange span{background: #fd7318; color: #fff; border: 1px solid #eb5d00;}
@@ -360,8 +370,18 @@
 
 .cutin-banner{width: 100%; text-align: center; min-height: 90px; margin: 20px 0 0;}
 
-
 .img-landscape {position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: 100%;}
 .img-portrait{position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);width: 100%; height: auto;}
 
-#matching_btn .button{background: transparent;}
+#matching_btn{display: inline-block; margin-left: 30%; margin-right: 30%;}
+#matching_btn button{
+	background: transparent; 
+	margin-top: 40px; 
+	border: solid 10px #E93F0B; 
+	border-radius: 20px; 
+	font-size: 30px; 
+	line-height: 50px;
+	font-family: inter;
+	font-weight: bold;
+	width: 320px;
+}

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,12 @@
     <link href="./css/main.css?after" rel="stylesheet">
 </head>
 <body>
+    <%
+        String user_id = null;
+        if(session.getAttribute("user_id") != null) {
+            user_id = (String) session.getAttribute("user_id");
+        }
+    %>
 	<div id="wrap">
         <!-- header -->
         <div id="header">
@@ -32,15 +39,16 @@
             <!-- //GNB -->
         </div>
         <!-- //header -->
-
         <!-- container -->
         <div id="container">
             <!-- 본문 -->
             <div id="content-wrap">
             	<div id="matching_btn">
-	                <button type="button"><img  src="./images/home_btn.png"></button>
-	                <button type="button"><img  src="./images/away_btn.png"></button>
-	                <button type="button"><img  src="./images/guest_btn.png"></button>
+	                <button type="button" onclick="location.href='./home.jsp' ">홈팀</button>
+                    <br>
+	                <button type="button" onclick="location.href='./away.jsp' ">어웨이팀</button>
+                    <br>
+	                <button type="button" onclick="location.href='./guest.jsp' ">게스트</button>
             	</div>
             </div>
             <!-- //본문 -->
@@ -48,29 +56,36 @@
             <!-- aside -->
             <div id="aside-wrap">
                 <div id="rightside">
-                    <!-- login -->
-                    <script>
-                        window.rightside = true;
-                        loginProc.loadVaild("#loginForm", false);
-                    </script>
+                    <%
+                        if(user_id == null) {
+                    %>
                     <div class="login-wrap">
-                        <form onsubmit="return false" id="loginForm" method="post" accept-charset="utf-8"
-                            novalidate="novalidate">
-                            <div class="login-set">
-                                <span class="login-chk"><input type="checkbox" class="chk-lock" id="autoLogin"
-                                        name="autoLogin" value="Y"><label for="autoLogin"><span
-                                            class="ico-chk"></span>로그인 상태 유지</label></span>
-                                <span class="check_security"></span>
-                            </div>
+                        <form id="loginForm" method="post" action="loginAction.jsp" accept-charset="utf-8">
                             <div class="login-box">
-                                <span><input type="text" placeholder="아이디" name="user_id"><input type="password"
-                                        name="password" placeholder="비밀번호"></span>
+                                <span>
+                                    <input type="text" name="user_id" placeholder="아이디" >
+                                    <input type="password" name="password" placeholder="비밀번호">
+                                </span>
                                 <button type="submit"><span>로그인</span></button>
                             </div>
                         </form>
-                        <div class="user-util"><a href="/member/joinform">회원가입</a><a href="/member/find/id">아이디·비밀번호
-                                찾기</a></div>
+                        <div class="user-util">
+                            <a href="/join.jsp">회원가입</a>
+                            <a href="/member/find/id">아이디·비밀번호 찾기</a>
+                        </div>
                     </div>
+                    <%
+                        } else {
+                    %>
+                    <div class="logout-wrap">
+                            <div class="logout-box">
+                                <button type="button"><a href="logoutAction.jsp">회원관리</a></button>
+                                <button type="button"><a href="logoutAction.jsp">로그아웃</a></button>
+                            </div>
+                    </div>
+                    <%
+                        }
+                    %>
                     <!-- //login -->
                 </div>
             </div>
