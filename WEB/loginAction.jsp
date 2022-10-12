@@ -36,7 +36,7 @@
             session.setAttribute("user_id", user.getUser_id());
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("location.href = 'main.jsp'");
+            script.println("location.href = './main.jsp'");
             script.println("</script>");
         }
         else if(result == 0) {

@@ -61,15 +61,15 @@
                             <dd><span class="item-value modify-on"><input type="text" name="name" id="name" placeholder="이름을 입력해주세요."></span>
                             </dd>
                         </dl>
-                    </div>
-                    <div class="section second-board">
-                        <h2 class="content-title">인증을 위해 이메일 입력</h2>
                         <dl>
-                            <dt class="essential">이메일 인증</dt>
+                            <dt class="essential">이메일</dt>
                             <dd><span class="item-value modify-on"><input type="text" name="email" id="email_address" placeholder="이메일을 입력해주세요."></span>
                             <p class="txt-hint txt-aleat"></p>
                             </dd>
                         </dl>
+                    </div>
+                    <div class="section second-board">
+                        
                     </div>
                     <div class="btn-wrap"><button type="submit" class="btn-orange-big"><span><em>회원가입</em></span></button></div>
                 </form>

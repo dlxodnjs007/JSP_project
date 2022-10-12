@@ -6,9 +6,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/common.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/base.css?after" rel="stylesheet">
+    <link href="./css/common.css?after" rel="stylesheet">
+    <link href="./css/main.css?after" rel="stylesheet">
 </head>
 <body>
     <%
@@ -68,23 +68,23 @@
                         <script src="/oa/ad_bbs_list.js?202292"></script>
 
                         <div class="board-header">
-                            <h2><a href="./popular.jsp">?α??</a><span class="ico-bookmark" data-mid="ilbe"
-                                    data-name="?α??" onclick="bookmark(this)"></span></h2>
+                            <h2><a href="./popular.jsp">오직인기</a><span class="ico-bookmark" data-mid="ilbe"
+                                    data-name="오직인기" onclick="bookmark(this)"></span></h2>
                         </div>
                         <ul class="board-body">
                             <li class="title-line">
-                                <span class="count">???</span>
-                                <span class="nick">?г???</span>
-                                <span class="date list_sort " data-order="date" style="cursor: pointer;">???</span>
+                                <span class="count">번호</span>
+                                <span class="nick">닉네임</span>
+                                <span class="date list_sort " data-order="date" style="cursor: pointer;">날짜</span>
                             </li>
                             <li>
 
                                 <span class="count">847,729</span>
 
                                 <span class="title ">
-                                    <a href="/view/11438123217" class="subject ">test????</a>
+                                    <a href="/view/11438123217" class="subject ">test제목</a>
                                 </span>
-                                <span class="global-nick nick">test?г???</span>
+                                <span class="global-nick nick">test닉네임</span>
 
                                 <span class="date">00:07:16</span>
                             </li>
@@ -94,10 +94,10 @@
                         <div class="post-btn-wrap">
                             <div class="btn-left">
                                 <button type="button" onclick="location.href='/list/ilbe'" id="list_back"
-                                    class="btn-default"><span>???</span></button>
+                                    class="btn-default"><span>목록</span></button>
                             </div>
                             <div class="paginate">
-                                <a href="javascript:;" onclick="searchList(1)" class="prev"><span></span>????</a>
+                                <a href="javascript:;" onclick="searchList(1)" class="prev"><span></span>이전</a>
                                 <a href="javascript:;" onclick="searchList(1)" class="page-on">1</a>
                                 <a href="javascript:;" onclick="searchList(2)">2</a>
                                 <a href="javascript:;" onclick="searchList(3)">3</a>
@@ -108,7 +108,7 @@
                                 <a href="javascript:;" onclick="searchList(8)">8</a>
                                 <a href="javascript:;" onclick="searchList(9)">9</a>
                                 <a href="javascript:;" onclick="searchList(10)">10</a>
-                                <a href="javascript:;" onclick="searchList(11)" class="next">????<span></span></a>
+                                <a href="javascript:;" onclick="searchList(11)" class="next">다음<span></span></a>
                                 <a href="javascript:;" style="display:none;" onclick="searchList(2)"
                                     class="accesskey_118" accesskey="v"></a>
                             </div>
@@ -177,8 +177,9 @@
                     %>
                     <div class="logout-wrap">
                             <div class="logout-box">
-                                <button type="button"><a href="logoutAction.jsp">회원관리</a></button>
-                                <button type="button"><a href="logoutAction.jsp">로그아웃</a></button>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">내 정보</button><br>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">내 팀 정보</button><br>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">로그아웃</button>
                             </div>
                     </div>
                     <%

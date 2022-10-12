@@ -135,16 +135,21 @@
 .login-box span input[type="password"]{margin-top: -1px;}
 .login-box button{position: absolute; top: 0; right: 0; width: 70px; height: 55px; border: 1px solid #ececec; background: #fff; font-size: 11px; font-weight: bold;}
 .logout-wrap {
-	margin: 10px 5px 0;
+	margin-top: 15px;
 	overflow: hidden;
 }
+.logout-box {
+	text-align: center;
+}
 .logout-box button{
-	width: 70px;
-	height: 55px;
-	border: 1px solid #ececec;
-	background: #ef222a;
+	width: 100px;
+	height: 25px;
+	border: 1px solid #ccc4c1;
+	background: #ffffff;
 	font-size: 11px;
-	font-weight: bold;}
+	font-weight: bold;
+	margin-bottom: 3px;
+}
 .user-util{text-align: center; margin-top: 11px;}
 .user-util a{display: inline-block; font-size: 11px;}
 .user-util a:first-child{margin-right: 14px;}

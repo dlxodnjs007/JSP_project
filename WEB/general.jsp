@@ -6,9 +6,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/common.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/base.css?after" rel="stylesheet">
+    <link href="./css/common.css?after" rel="stylesheet">
+    <link href="./css/main.css?after" rel="stylesheet">
 </head>
 <body>
     <%
@@ -68,8 +68,8 @@
                         <script src="/oa/ad_bbs_list.js?202292"></script>
 
                         <div class="board-header">
-                            <h2><a href="./general.jsp">자유게시판</a><span class="ico-bookmark" data-mid="ilbe"
-                                    data-name="자유게시판" onclick="bookmark(this)"></span></h2>
+                            <h2><a href="./general.jsp">오직컨텐츠</a><span class="ico-bookmark" data-mid="ilbe"
+                                    data-name="오직컨텐츠" onclick="bookmark(this)"></span></h2>
                         </div>
                         <ul class="board-body">
                             <li class="title-line">
@@ -156,13 +156,6 @@
                     %>
                     <div class="login-wrap">
                         <form id="loginForm" method="post" action="loginAction.jsp" accept-charset="utf-8">
-                            <!-- onsubmit="return false" -->
-                            <!-- <div class="login-set">
-                                <span class="login-chk"><input type="checkbox" class="chk-lock" id="autoLogin"
-                                        name="autoLogin" value="Y"><label for="autoLogin"><span
-                                            class="ico-chk"></span>로그인 상태 유지</label></span>
-                                <span class="check_security"></span>
-                            </div> -->
                             <div class="login-box">
                                 <span>
                                     <input type="text" name="user_id" placeholder="아이디" >
@@ -181,8 +174,9 @@
                     %>
                     <div class="logout-wrap">
                             <div class="logout-box">
-                                <button type="button"><a href="logoutAction.jsp">회원관리</a></button>
-                                <button type="button"><a href="logoutAction.jsp">로그아웃</a></button>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">내 정보</button><br>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">내 팀 정보</button><br>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">로그아웃</button>
                             </div>
                     </div>
                     <%

@@ -73,8 +73,9 @@
                     %>
                     <div class="logout-wrap">
                             <div class="logout-box">
-                                <button type="button"><a href="logoutAction.jsp">회원관리</a></button>
-                                <button type="button"><a href="logoutAction.jsp">로그아웃</a></button>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">내 정보</button><br>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">내 팀 정보</button><br>
+                                <button type="button" onclick="location.href='./logoutAction.jsp'">로그아웃</button>
                             </div>
                     </div>
                     <%
