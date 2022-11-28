@@ -48,30 +48,84 @@
                         <h2 class="content-title">기본 정보</h2>
                         <dl>
                             <dt class="essential">아이디</dt>
-                            <dd><span class="item-value modify-on"><input type="text" name="user_id" id="user_id" placeholder="아이디를 입력해주세요."></span>
+                            <dd>
+                            <span class="item-value modify-on">
+                            <input type="text" name="user_id" id="user_id" placeholder="닉네임으로 사용됩니다.">
+                            </span>
                             </dd>
                         </dl>
                         <dl>
                             <dt class="essential">비밀번호</dt>
-                            <dd><span class="item-value modify-on"><input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요."></span>
+                            <dd>
+                            <span class="item-value modify-on">
+                            <input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요.">
+                            </span>
                             </dd>
                         </dl>
+                        <%-- <dl>
+                            <dt class="essential">비밀번호 확인</dt>
+                            <dd>
+                            <span class="item-value modify-on">
+                            <input type="password" name="password" id="password" placeholder="비밀번호를 확인">
+                            </span>
+                            </dd>
+                        </dl> --%>
                         <dl>
                             <dt class="essential">이름</dt>
-                            <dd><span class="item-value modify-on"><input type="text" name="name" id="name" placeholder="이름을 입력해주세요."></span>
+                            <dd>
+                            <span class="item-value modify-on">
+                            <input type="text" name="name" id="name" placeholder="이름을 입력해주세요.">
+                            </span>
                             </dd>
                         </dl>
                         <dl>
                             <dt class="essential">이메일</dt>
-                            <dd><span class="item-value modify-on"><input type="text" name="email" id="email_address" placeholder="이메일을 입력해주세요."></span>
-                            <p class="txt-hint txt-aleat"></p>
+                            <dd>
+                            <span class="item-value modify-on">
+                            <input type="text" name="email" id="email_address" placeholder="이메일을 입력해주세요.">
+                            </span>
                             </dd>
                         </dl>
+                        <dl>
+                            <dt class="essential">키</dt>
+                            <dd><span class="item-value modify-on">
+                            <input type="text" name="height" id="height" placeholder="키를 입력해주세요.">
+                            </span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="essential">선출여부</dt>
+                            <dd>
+                            <span class="item-value">
+                            <input type="radio" name="elite_or_not" value="not_elite">비선출
+                            <input type="radio" name="elite_or_not" value="highschool">고등선출
+                            <input type="radio" name="elite_or_not" value="university">대학선출
+                            <input type="radio" name="elite_or_not" value="professional">프로선출
+                            </span>
+                            <%-- <input type="text" name="elite_or_not" id="elite_or_not" placeholder="선출여부를 선택해주세요."> --%>
+                            </dd>
+                        </dl>
+                        
+                        <%-- <dl>
+                            <dt class="essential">휴대폰 인증</dt>
+                            <dd>
+                            <span class="item-value modify-on">
+                            <input type="text" name="phone" id="phone" placeholder="01012345678">
+                            </span>
+                            </dd>
+                            <button>
+                        </dl> --%>
                     </div>
                     <div class="section second-board">
                         
                     </div>
-                    <div class="btn-wrap"><button type="submit" class="btn-orange-big"><span><em>회원가입</em></span></button></div>
+                    <div class="btn-wrap">
+                        <button type="submit" class="btn-orange-big">
+                            <span>
+                                <em>회원가입</em>
+                            </span>
+                        </button>
+                    </div>
                 </form>
             </div>
 

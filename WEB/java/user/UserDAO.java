@@ -16,7 +16,7 @@ public class UserDAO {
             String dbURL = "jdbc:mysql://localhost:3306/bbs";
             String dbID = "root";
             String dbPassword = "197562dlxo!";
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
         } catch (Exception e) {
             // TODO: handle exception
@@ -46,13 +46,16 @@ public class UserDAO {
     }
 
     public int join(User user) {
-        String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?)";
+        String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?, ?)";
         try {
             pstmt = conn.prepareStatement(SQL);
             pstmt.setString(1, user.getUser_id());
             pstmt.setString(2, user.getPassword());
             pstmt.setString(3, user.getName());
             pstmt.setString(4, user.getEmail());
+            pstmt.setString(5, user.getHeight());
+            pstmt.setString(6, user.getElite_or_not());
+            
             return pstmt.executeUpdate();
         } catch (Exception e) {
             // TODO: handle exception

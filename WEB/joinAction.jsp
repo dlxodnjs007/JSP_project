@@ -10,6 +10,8 @@
 <jsp:setProperty name="user" property="password"/>
 <jsp:setProperty name="user" property="name"/>
 <jsp:setProperty name="user" property="email"/>
+<jsp:setProperty name="user" property="height"/>
+<jsp:setProperty name="user" property="elite_or_not"/>
 
 <!DOCTYPE html>
 <html>
@@ -19,18 +21,12 @@
 </head>
 <body>
     <%
-        String user_id = null;
-        if(session.getAttribute("user_id") != null) {
-            user_id = (String) session.getAttribute("user_id");
-        }
-        if(user_id != null) {
-            PrintWriter script = response.getWriter();
-            script.println("<script>");
-            script.println("alert('이미 로그인이 되어있습니다.')");
-            script.println("location.href = 'main.jsp'");
-            script.println("</script>");
-        }
-        if(user.getUser_id() == null || user.getPassword() == null || user.getName() == null || user.getEmail() == null) {
+        if(user.getUser_id() == null || 
+        user.getPassword() == null || 
+        user.getName() == null || 
+        user.getEmail() == null ||
+        user.getHeight() == null ||
+        user.getElite_or_not() == null) {
             PrintWriter script = response.getWriter();
             script.println("<script>");
             script.println("alert('입력이 안 된 사항이 있습니다.')");

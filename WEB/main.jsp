@@ -120,7 +120,9 @@
                                     <input type="text" name="user_id" placeholder="아이디" >
                                     <input type="password" name="password" placeholder="비밀번호">
                                 </span>
-                                <button type="submit"><span>로그인</span></button>
+                                <button type="submit" value="main" name="loginButton">
+                                    <span>로그인</span>
+                                </button>
                             </div>
                         </form>
                         <div class="user-util">

@@ -43,9 +43,27 @@
         <div id="container">
             <!-- 본문 -->
             <div id="content-wrap">
+                <div id="type-of-game">
+                    내가 홈팀
+                </div>
+                <%-- <%
+                    if(game_mady_by_home == null) {
+                %> --%>
+                <div id="no-game">
+                    등록된 홈 경기가 없습니다.
+                </div>
+                <%-- <%
+                    } else {
+                %>
                 
+                <%
+                    }
+                %> --%>
+                <div id="matching_btn">
+                    <button type="button" onclick="location.href='./makeHomeGame.jsp'">홈 만들기</button>
+                </div>
             </div>
-            <!-- //본문 -->
+            <!-- 본문 끝-->
             
             <!-- aside -->
             <div id="aside-wrap">

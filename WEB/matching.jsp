@@ -44,11 +44,22 @@
             <!-- 본문 -->
             <div id="content-wrap">
             	<div id="matching_btn">
-	                <button type="button" onclick="location.href='./home.jsp' ">내가 홈팀</button>
+                <script>
+                    function loginCheck(url) {
+                        var user_id = "<%=user_id%>"
+                        if(user_id == "null") {
+                            alert('로그인을 먼저 해주세요');
+                        }
+                        else {
+                            location.href = url + '.jsp';
+                        }
+                    }
+                </script>
+	                <button type="button" onclick="loginCheck('home')">내가 홈팀</button>
                     <br>
-	                <button type="button" onclick="location.href='./away.jsp' ">내가 어웨이팀</button>
+	                <button type="button" onclick="loginCheck('away')">내가 어웨이팀</button>
                     <br>
-	                <button type="button" onclick="location.href='./guest.jsp' ">내가 게스트</button>
+	                <button type="button" onclick="loginCheck('guest')">내가 게스트</button>
             	</div>
             </div>
             <!-- //본문 -->
@@ -65,7 +76,9 @@
                                     <input type="text" name="user_id" placeholder="아이디" >
                                     <input type="password" name="password" placeholder="비밀번호">
                                 </span>
-                                <button type="submit"><span>로그인</span></button>
+                                <button type="submit" value="matching" name="loginButton">
+                                    <span>로그인</span>
+                                </button>
                             </div>
                         </form>
                         <div class="user-util">

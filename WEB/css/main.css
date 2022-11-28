@@ -21,15 +21,4 @@
 .widget ul li .title-wrap .date{font-size: 11px; font-family: tahoma, sans-serif; color: #999999; margin-right: 5px;}
 .widget ul li .ico-set .comment{font-size: 11px; font-family: tahoma, sans-serif; color: #FE6700; padding: 0 2px 0 4px;}
 .widget ul li .ico-set .comment a{font-size: 11px; font-family: tahoma, sans-serif; color: #FE6700;}
-.widget.partner{width:100%; margin-top:18px;}
-.cutin-banner{width: 100%; text-align: center; min-height: 90px; margin: 20px 0 0;}
 
-/*partner*/
-.hibook-element{display:inline-block; margin-right:7px;}
-.hibook-element:nth-of-type(8){margin-right:0px}
-.hibook-element .hibook-element-title{text-align:center; margin-top:10px;}
-
-.fulltv-element{display:inline-block; margin-right:10px;}
-.fulltv-element:nth-of-type(5){margin-right:0px}
-.fulltv-element:nth-of-type(10){margin-right:0px}
-.fulltv-element .fulltv-element-title{text-align:center; margin-top:10px;margin-bottom:10px ;width:170px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}

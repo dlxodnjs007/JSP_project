@@ -47,26 +47,6 @@
                 <div class="board-wrap">
                     <!-- 목록 -->
                     <div class="board-list">
-                        <script src="/js/board/thumb.js?202292"></script>
-
-                        <script>
-                            window.boardId = "ilbe";
-                            function changeListSize(val) {
-                                $("#searchForm input[name=listSize]").val(val);
-                                searchList(1);
-                            }
-                            function listStyle(val) {
-                                $("#searchForm input[name=listStyle]").val(val);
-                                //$("#searchForm")[0].submit();
-                                searchList(0);
-                            }
-
-
-                            $(".write-num strong").html("847,729");
-
-                        </script>
-                        <script src="/oa/ad_bbs_list.js?202292"></script>
-
                         <div class="board-header">
                             <h2><a href="./general.jsp">오직컨텐츠</a><span class="ico-bookmark" data-mid="ilbe"
                                     data-name="오직컨텐츠" onclick="bookmark(this)"></span></h2>
@@ -141,13 +121,8 @@
 
 
                 </div>
-
-                <!--<div class="widget cutin-banner js-genieessp-com"></div>-->
-
             </div>
-
             <!-- //본문 -->
-
             <!-- aside -->
             <div id="aside-wrap">
                 <div id="rightside">

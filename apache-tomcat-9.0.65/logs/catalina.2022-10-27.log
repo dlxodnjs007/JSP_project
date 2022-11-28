@@ -1,0 +1,871 @@
+27-Oct-2022 22:05:54.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 22:05:54.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 22:05:54.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 22:05:54.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 22:05:54.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 22:05:54.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 22:05:54.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 22:05:54.358 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 22:05:54.358 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 22:05:54.358 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 22:05:54.367 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 22:05:54.490 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 22:05:54.501 INFO [main] org.apache.catalina.startup.Catalina.load [300] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 22:05:54.526 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 22:05:54.526 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 22:05:54.849 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 22:05:54.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 22:05:55.048 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 22:05:55.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [148] 밀리초에 완료되었습니다.
+27-Oct-2022 22:05:55.051 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 22:05:55.194 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 22:05:55.196 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [145] 밀리초에 완료되었습니다.
+27-Oct-2022 22:05:55.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 22:05:55.350 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 22:05:55.352 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [154] 밀리초에 완료되었습니다.
+27-Oct-2022 22:05:55.352 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 22:05:55.496 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 22:05:55.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [146] 밀리초에 완료되었습니다.
+27-Oct-2022 22:05:55.503 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 22:05:55.545 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1043] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:38:41.183 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:38:41.183 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:38:41.188 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:38:41.197 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.197 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.198 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.199 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.199 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.199 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.201 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.201 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.201 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.202 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.202 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.202 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.204 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.204 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.204 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:38:41.204 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:38:41.222 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:38:54.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:38:54.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:38:54.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:38:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:38:54.812 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:38:54.812 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:38:54.812 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:38:54.815 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:38:54.930 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:38:54.942 INFO [main] org.apache.catalina.startup.Catalina.load [252] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:38:54.966 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:38:54.966 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:38:55.274 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:38:55.331 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:38:55.477 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:38:55.480 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [148] 밀리초에 완료되었습니다.
+27-Oct-2022 23:38:55.480 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:38:55.621 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:38:55.623 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [143] 밀리초에 완료되었습니다.
+27-Oct-2022 23:38:55.623 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:38:55.767 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:38:55.769 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [146] 밀리초에 완료되었습니다.
+27-Oct-2022 23:38:55.769 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:38:55.917 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:38:55.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [150] 밀리초에 완료되었습니다.
+27-Oct-2022 23:38:55.921 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:38:55.960 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1018] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:41:54.082 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:41:54.083 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:41:54.087 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:41:54.092 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.092 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.092 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.094 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.094 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.094 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.095 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.095 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.095 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.096 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.096 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.097 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.098 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.098 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.098 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:41:54.098 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:41:54.100 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:41:54.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:41:54.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:41:54.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:41:54.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:41:54.413 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:41:54.413 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:41:54.413 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:41:54.417 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:41:54.542 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:41:54.556 INFO [main] org.apache.catalina.startup.Catalina.load [276] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:41:54.582 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:41:54.583 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:41:54.586 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:41:54.588 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:54.591 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:54.623 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:41:54.623 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 []이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:41:54.653 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[]
+27-Oct-2022 23:41:54.670 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource Annotation들인 [file:/C:/Cap_de/WEB/WEB-INF/classes/user/]을(를) 가진 클래스 파일들을 찾기 위해, 웹 애플리케이션 디렉토리를 스캔합니다.
+27-Oct-2022 23:41:54.678 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:41:54.890 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:41:54.921 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:41:54.921 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:41:54.921 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:41:54.921 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:41:54.921 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:41:54.934 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:41:54.936 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:41:54.937 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:41:55.002 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:41:55.003 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:41:55.004 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.005 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.008 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:41:55.008 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/.git]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:41:55.011 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/.git]
+27-Oct-2022 23:41:55.015 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:41:55.179 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:41:55.181 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:41:55.182 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:41:55.182 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:41:55.182 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:41:55.182 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:41:55.183 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:41:55.184 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:41:55.184 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:41:55.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [185] 밀리초에 완료되었습니다.
+27-Oct-2022 23:41:55.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:41:55.190 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:41:55.191 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.191 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.195 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:41:55.195 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/css]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:41:55.197 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/css]
+27-Oct-2022 23:41:55.200 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:41:55.352 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:41:55.355 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:41:55.355 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:41:55.355 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:41:55.355 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:41:55.355 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:41:55.357 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:41:55.357 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:41:55.358 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:41:55.360 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [171] 밀리초에 완료되었습니다.
+27-Oct-2022 23:41:55.360 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:41:55.361 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:41:55.362 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.363 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.366 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:41:55.367 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/images]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:41:55.370 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/images]
+27-Oct-2022 23:41:55.373 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:41:55.538 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:41:55.539 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:41:55.540 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:41:55.540 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:41:55.540 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:41:55.540 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:41:55.541 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:41:55.542 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:41:55.542 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:41:55.544 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [184] 밀리초에 완료되었습니다.
+27-Oct-2022 23:41:55.544 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:41:55.545 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:41:55.546 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.546 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:41:55.548 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:41:55.549 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/java]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:41:55.552 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/java]
+27-Oct-2022 23:41:55.555 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:41:55.710 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:41:55.712 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:41:55.712 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:41:55.713 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:41:55.713 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:41:55.713 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:41:55.714 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:41:55.714 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:41:55.715 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:41:55.717 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [172] 밀리초에 완료되었습니다.
+27-Oct-2022 23:41:55.721 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:41:55.760 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1204] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:47:07.304 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:47:07.304 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:47:07.309 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:47:07.312 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:47:07.314 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.314 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.315 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.316 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:47:07.317 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.317 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.317 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.318 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:47:07.319 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.319 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.319 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.320 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:47:07.321 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.321 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.321 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.321 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:47:07.322 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.322 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.322 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:47:07.323 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:47:07.333 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:47:07.333 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:47:07.333 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:47:07.333 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:47:07.333 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:47:07.334 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:47:07.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:47:07.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:47:07.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:47:07.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:47:07.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:47:07.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:47:07.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:47:07.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:47:07.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:47:07.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:47:07.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:47:07.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:47:07.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:47:07.621 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:47:07.621 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:47:07.621 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:47:07.624 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:47:07.747 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:47:07.760 INFO [main] org.apache.catalina.startup.Catalina.load [272] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:47:07.782 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:47:07.782 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:47:07.785 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:47:07.786 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:07.788 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:07.818 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:47:07.819 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 []이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:47:07.848 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[]
+27-Oct-2022 23:47:07.865 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource Annotation들인 [file:/C:/Cap_de/WEB/WEB-INF/classes/user/]을(를) 가진 클래스 파일들을 찾기 위해, 웹 애플리케이션 디렉토리를 스캔합니다.
+27-Oct-2022 23:47:07.871 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:47:08.077 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:47:08.107 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:47:08.108 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:47:08.108 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:47:08.108 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:47:08.108 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:47:08.120 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:47:08.121 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:47:08.122 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:47:08.185 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:47:08.185 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:47:08.186 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.186 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.189 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:47:08.189 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/.git]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:47:08.192 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/.git]
+27-Oct-2022 23:47:08.195 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:47:08.355 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:47:08.357 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:47:08.357 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:47:08.357 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:47:08.357 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:47:08.357 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:47:08.358 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:47:08.359 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:47:08.359 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:47:08.363 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [177] 밀리초에 완료되었습니다.
+27-Oct-2022 23:47:08.363 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:47:08.364 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:47:08.365 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.365 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.369 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:47:08.369 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/css]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:47:08.371 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/css]
+27-Oct-2022 23:47:08.374 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:47:08.528 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:47:08.530 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:47:08.530 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:47:08.530 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:47:08.530 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:47:08.530 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:47:08.531 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:47:08.532 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:47:08.533 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:47:08.535 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [172] 밀리초에 완료되었습니다.
+27-Oct-2022 23:47:08.535 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:47:08.536 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:47:08.537 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.538 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.540 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:47:08.540 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/images]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:47:08.543 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/images]
+27-Oct-2022 23:47:08.547 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:47:08.699 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:47:08.701 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:47:08.701 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:47:08.701 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:47:08.701 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:47:08.701 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:47:08.702 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:47:08.703 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:47:08.704 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:47:08.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [171] 밀리초에 완료되었습니다.
+27-Oct-2022 23:47:08.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:47:08.707 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:47:08.708 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.708 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:47:08.711 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:47:08.711 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/java]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:47:08.714 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/java]
+27-Oct-2022 23:47:08.716 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:47:08.867 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:47:08.869 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:47:08.869 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:47:08.869 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:47:08.869 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:47:08.869 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:47:08.870 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:47:08.871 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:47:08.871 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:47:08.873 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [167] 밀리초에 완료되었습니다.
+27-Oct-2022 23:47:08.877 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:47:08.913 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1152] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:49:24.554 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:49:24.554 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:49:24.559 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:49:24.564 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:24.566 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.567 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.568 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.569 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:24.571 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.571 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.572 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.572 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:24.574 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.574 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.574 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.574 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:24.575 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.575 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.576 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.576 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:24.577 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.577 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.577 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:24.577 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:49:24.589 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:49:24.589 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:24.589 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:24.589 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:24.589 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:24.590 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:29.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:29.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:29.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:49:29.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:49:29.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:49:29.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:49:29.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:49:29.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:29.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:29.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:49:29.116 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:49:29.116 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:49:29.116 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:49:29.118 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:49:29.233 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:49:29.244 INFO [main] org.apache.catalina.startup.Catalina.load [252] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:49:29.266 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:49:29.266 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:49:29.269 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:29.270 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.273 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.298 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:29.299 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 []이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:29.323 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[]
+27-Oct-2022 23:49:29.338 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource Annotation들인 [file:/C:/Cap_de/WEB/WEB-INF/classes/user/]을(를) 가진 클래스 파일들을 찾기 위해, 웹 애플리케이션 디렉토리를 스캔합니다.
+27-Oct-2022 23:49:29.344 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:49:29.532 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:29.561 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:29.561 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:29.561 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:29.561 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:29.562 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:29.573 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:29.574 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:49:29.575 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:49:29.632 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:49:29.632 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:29.633 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.633 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.635 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:29.635 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/.git]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:29.637 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/.git]
+27-Oct-2022 23:49:29.640 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:49:29.775 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:29.777 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:29.777 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:29.777 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:29.777 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:29.777 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:29.778 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:29.779 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:49:29.779 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:49:29.782 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [150] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:29.783 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:49:29.783 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:29.783 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.784 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.786 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:29.786 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/css]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:29.789 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/css]
+27-Oct-2022 23:49:29.791 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:49:29.922 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:29.924 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:29.924 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:29.924 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:29.924 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:29.924 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:29.926 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:29.926 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:49:29.927 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:49:29.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [146] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:29.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:49:29.930 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:29.930 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.931 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:29.933 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:29.933 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/images]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:29.936 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/images]
+27-Oct-2022 23:49:29.938 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:49:30.074 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:30.076 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:30.076 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:30.076 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:30.076 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:30.076 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:30.077 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:30.078 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:49:30.078 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:49:30.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [151] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:30.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:49:30.081 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:30.081 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:30.082 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:30.084 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:30.085 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/java]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:30.087 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/java]
+27-Oct-2022 23:49:30.090 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Annotation들, [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]을(를) 가진 클래스 파일들을 찾기 위해, JAR 파일을 스캔합니다.
+27-Oct-2022 23:49:30.225 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:30.227 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:30.227 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:30.227 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:30.227 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:30.227 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:30.228 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:30.228 FINE [main] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan [file:/C:/Cap_de/apache-tomcat-9.0.65/lib/mysql-connector-java-8.0.30.jar]에서 TLD 파일들을 찾을 수 없습니다. CATALINA_BASE/conf/catalina.properties 파일 내의 tomcat.util.scan.StandardJarScanFilter.jarsToSkip 프로퍼티에, 해당 JAR를 추가하는 것을 고려하십시오.
+27-Oct-2022 23:49:30.229 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+27-Oct-2022 23:49:30.230 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [150] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:30.234 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:49:30.270 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1025] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:49:55.360 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:49:55.361 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:49:55.365 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:49:55.368 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:55.370 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.370 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.370 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.372 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:55.373 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.373 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.373 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.374 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:55.375 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.375 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.375 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.376 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:55.377 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.377 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.377 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.378 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:49:55.379 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.379 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.379 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:49:55.379 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:49:55.398 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:49:55.398 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:55.398 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:55.398 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:55.399 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:55.399 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:49:55.679 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:49:55.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:55.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:55.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:49:55.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:49:55.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:49:55.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:49:55.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:49:55.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:55.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:49:55.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:49:55.690 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:49:55.690 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:49:55.690 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:49:55.693 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:49:55.821 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:49:55.835 INFO [main] org.apache.catalina.startup.Catalina.load [272] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:49:55.859 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:49:55.859 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:49:55.862 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:55.863 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:55.866 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:55.897 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:55.897 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 []이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:55.923 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[]
+27-Oct-2022 23:49:55.941 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource Annotation들인 [file:/C:/Cap_de/WEB/WEB-INF/classes/user/]을(를) 가진 클래스 파일들을 찾기 위해, 웹 애플리케이션 디렉토리를 스캔합니다.
+27-Oct-2022 23:49:55.947 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:55.980 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:55.980 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:55.980 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:55.980 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:55.980 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:55.995 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:56.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:49:56.071 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:56.072 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.072 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.075 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:56.075 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/.git]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:56.077 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/.git]
+27-Oct-2022 23:49:56.081 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:56.082 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:56.082 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:56.083 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:56.083 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:56.083 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:56.084 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:56.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:56.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:49:56.089 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:56.090 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.090 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.092 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:56.093 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/css]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:56.095 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/css]
+27-Oct-2022 23:49:56.097 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:56.099 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:56.099 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:56.099 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:56.099 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:56.099 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:56.100 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:56.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:56.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:49:56.104 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:56.104 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.105 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.107 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:56.107 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/images]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:56.110 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/images]
+27-Oct-2022 23:49:56.112 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:56.114 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:56.114 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:56.114 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:56.114 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:56.114 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:56.115 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:56.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:56.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:49:56.119 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:49:56.120 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.120 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:49:56.123 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:49:56.123 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/java]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:49:56.126 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/java]
+27-Oct-2022 23:49:56.127 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:49:56.129 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:49:56.129 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:49:56.129 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:49:56.129 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:49:56.129 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:49:56.131 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:49:56.133 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+27-Oct-2022 23:49:56.135 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:49:56.170 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [335] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:50:13.425 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:50:13.426 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:50:13.431 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:50:13.434 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:50:13.436 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.436 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.437 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.438 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:50:13.439 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.440 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.440 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.440 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:50:13.441 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.441 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.441 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.442 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:50:13.443 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.443 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.443 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.443 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:50:13.444 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.444 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.444 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:50:13.445 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:50:13.456 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:50:13.456 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:50:13.457 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:50:13.457 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:50:13.457 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:50:13.457 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:50:20.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:50:20.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:50:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:50:20.449 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:50:20.449 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:50:20.449 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:50:20.452 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:50:20.569 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:50:20.581 INFO [main] org.apache.catalina.startup.Catalina.load [261] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:50:20.604 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:50:20.604 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:50:20.609 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:50:20.609 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.613 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.644 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:50:20.644 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 []이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:50:20.675 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[]
+27-Oct-2022 23:50:20.691 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource Annotation들인 [file:/C:/Cap_de/WEB/WEB-INF/classes/user/]을(를) 가진 클래스 파일들을 찾기 위해, 웹 애플리케이션 디렉토리를 스캔합니다.
+27-Oct-2022 23:50:20.699 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:50:20.735 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:50:20.735 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:50:20.735 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:50:20.735 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:50:20.735 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:50:20.750 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:50:20.821 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:50:20.822 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:50:20.822 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.823 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/.git] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.825 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:50:20.826 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/.git]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:50:20.828 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/.git]
+27-Oct-2022 23:50:20.831 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:50:20.833 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:50:20.834 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:50:20.834 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:50:20.834 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:50:20.834 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:50:20.836 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:50:20.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+27-Oct-2022 23:50:20.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:50:20.843 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:50:20.844 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.844 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/css] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.848 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:50:20.848 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/css]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:50:20.853 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/css]
+27-Oct-2022 23:50:20.856 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:50:20.858 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:50:20.858 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:50:20.858 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:50:20.858 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:50:20.858 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:50:20.860 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:50:20.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [22] 밀리초에 완료되었습니다.
+27-Oct-2022 23:50:20.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:50:20.864 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:50:20.865 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.866 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/images] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.869 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:50:20.869 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/images]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:50:20.873 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/images]
+27-Oct-2022 23:50:20.875 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:50:20.877 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:50:20.877 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:50:20.877 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:50:20.877 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:50:20.877 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:50:20.879 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:50:20.882 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+27-Oct-2022 23:50:20.882 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:50:20.884 FINE [main] org.apache.catalina.startup.ContextConfig.init ContextConfig: 초기화 중
+27-Oct-2022 23:50:20.885 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Processing context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.886 FINE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Successfully processed context [/java] configuration file [file:/C:/Cap_de/apache-tomcat-9.0.65/conf/context.xml]
+27-Oct-2022 23:50:20.889 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ContextConfig: 시작 처리 중
+27-Oct-2022 23:50:20.890 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart 컨텍스트 [/java]이(가), validation:[false]와(과) namespaceAware:[false]을 사용하여, web.xml과 web-fragment.xml 파일들을 파싱합니다.
+27-Oct-2022 23:50:20.892 FINE [main] org.apache.catalina.startup.ContextConfig.getContextWebXmlSource 애플리케이션 web.xml이 없습니다. 기본 설정들만을 사용할 것입니다. StandardEngine[Catalina].StandardHost[localhost].StandardContext[/java]
+27-Oct-2022 23:50:20.894 FINE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsFile Annotation들을 가진 클래스 파일들을 찾기 위해 디렉토리 [C:\Cap_de\apache-tomcat-9.0.65\lib]을(를) 스캔합니다.
+27-Oct-2022 23:50:20.897 FINE [main] org.apache.catalina.startup.ContextConfig.authenticatorConfig 메소드 [NONE]을(를) 위한 Authenticator를 설정했습니다.
+27-Oct-2022 23:50:20.897 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart Pipeline Configuration:
+27-Oct-2022 23:50:20.897 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.authenticator.NonLoginAuthenticator
+27-Oct-2022 23:50:20.897 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart   org.apache.catalina.core.StandardContextValve
+27-Oct-2022 23:50:20.897 FINE [main] org.apache.catalina.startup.ContextConfig.configureStart ======================
+27-Oct-2022 23:50:20.899 FINE [main] org.apache.jasper.servlet.TldScanner.scanResourcePaths 리소스 경로 [/WEB-INF/]에서 TLD 파일들을 찾을 수 없습니다.
+27-Oct-2022 23:50:20.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+27-Oct-2022 23:50:20.904 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:50:20.944 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [363] 밀리초 내에 시작되었습니다.
+27-Oct-2022 23:51:02.566 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+27-Oct-2022 23:51:02.566 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+27-Oct-2022 23:51:02.571 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+27-Oct-2022 23:51:02.574 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:51:02.576 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.576 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.576 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.577 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:51:02.579 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.579 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.579 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.579 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:51:02.580 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.580 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.581 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.581 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:51:02.582 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.582 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.582 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.582 FINE [main] org.apache.catalina.startup.ContextConfig.configureStop ContextConfig: STOP 처리 중
+27-Oct-2022 23:51:02.584 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Java 9 또는 이후 버전을 사용할 때에는, "--add-opens=java.base/java.io=ALL-UNNAMED" 을(를) JVM 명령행 아규먼트들에 추가해서, ObjectStream 캐시 메모리 릭 방지 옵션을 활성화할 필요가 있습니다. 또는 원하시는 경우, ObjectStream 클래스 캐시 메모리 릭 방지 옵션을 비활성화해서 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.584 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks Java 9 환경에서 실행할 때에는, ThreadLocal 메모리 누수 탐지를 위하여, "--add-opens=java.base/java.lang=ALL-UNNAMED"를 JVM 명령 행 아규먼트들에 추가해야 합니다. 또는, ThreadLocal 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고 메시지를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.584 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets Java 9에서 실행하면서 RMI Target 메모리 누수 탐지를 사용 가능하게 하려면, "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"를 JVM 명령 행 아규먼트에 추가해야 합니다. 또는, RMI Target 메모리 누수 탐지를 사용불능 상태로 설정함으로써, 이 경고를 없앨 수도 있습니다.
+27-Oct-2022 23:51:02.584 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+27-Oct-2022 23:51:02.605 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+27-Oct-2022 23:51:02.606 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:51:02.606 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:51:02.606 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:51:02.607 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:51:02.607 FINE [main] org.apache.catalina.startup.ContextConfig.destroy ContextConfig: 소멸시키는 중
+27-Oct-2022 23:51:06.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.65
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jul 14 2022 12:28:53 UTC
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.65.0
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-17.0.2
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.2+8-LTS-86
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:51:06.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=c:\Cap_de\apache-tomcat-9.0.65/conf/logging.properties
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:51:06.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=c:\Cap_de\apache-tomcat-9.0.65
+27-Oct-2022 23:51:06.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=c:\Cap_de\apache-tomcat-9.0.65/temp
+27-Oct-2022 23:51:06.887 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+27-Oct-2022 23:51:06.887 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Oct-2022 23:51:06.887 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+27-Oct-2022 23:51:06.889 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+27-Oct-2022 23:51:07.005 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+27-Oct-2022 23:51:07.017 INFO [main] org.apache.catalina.startup.Catalina.load [252] 밀리초 내에 서버가 초기화되었습니다.
+27-Oct-2022 23:51:07.039 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+27-Oct-2022 23:51:07.039 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.65]
+27-Oct-2022 23:51:07.229 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]을(를) 배치합니다.
+27-Oct-2022 23:51:07.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\.git]에 대한 배치가 [13] 밀리초에 완료되었습니다.
+27-Oct-2022 23:51:07.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]을(를) 배치합니다.
+27-Oct-2022 23:51:07.258 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\css]에 대한 배치가 [14] 밀리초에 완료되었습니다.
+27-Oct-2022 23:51:07.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]을(를) 배치합니다.
+27-Oct-2022 23:51:07.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\images]에 대한 배치가 [12] 밀리초에 완료되었습니다.
+27-Oct-2022 23:51:07.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]을(를) 배치합니다.
+27-Oct-2022 23:51:07.284 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Cap_de\WEB\java]에 대한 배치가 [13] 밀리초에 완료되었습니다.
+27-Oct-2022 23:51:07.287 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+27-Oct-2022 23:51:07.323 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [305] 밀리초 내에 시작되었습니다.

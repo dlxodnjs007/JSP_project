@@ -1,139 +1,6 @@
-/*# sourceURL=/css/mypage.css?190820 */
-/*@ sourceURL=/css/mypage.css?190820 */
 @charset "utf-8";
 /* 게시판 */
-
-.my-header .top-banner{margin-top: 23px;}
-
-.my-tab{position: relative; z-index: 1; margin-top: 18px;}
-.my-tab ul{overflow: hidden;}
-.my-tab ul li{float: left; height: 30px; line-height: 30px; background: #fafafa;}
-.my-tab ul li a{display: block; padding: 0 16px;}
-.my-tab ul li.on{border:1px solid #e2e2e2; border-bottom: 0; background: #fff;}
-.my-tab ul li.on a:hover{text-decoration: none;}
-
-.my-body{position: relative; padding: 40px; border: 1px solid #e2e2e2; margin-top: -1px;}
-
-
-.my-body h3{color: #2d8cff; font-size: 14px; margin-bottom: 20px;}
-.my-body .in-guide h3{margin-bottom: 12px;}
-.my-body .txt-guide{margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e2e2e2; color: #888888;}
-.my-body .item-count{font-size: 11px; margin-bottom: 4px;}
-.my-body .item-count strong{color: #ef222a;}
-
-.member-board dl{overflow: hidden;}
-.member-board dl dt{float: left; width: 150px; line-height: 33px; margin-bottom: 7px;}
-.member-board dl dd{float: left; margin-bottom: 7px;}
-.member-board dl:last-child dt{margin-bottom: 0;}
-.member-board dl:last-child dd{margin-bottom: 0;}
-.member-board .item-value{display: inline-block; width: 304px; height: 33px; line-height: 33px; background: #f7f7f7; border-radius: 3px; padding-left: 16px; margin-right: 10px;}
-.member-board a.btn-default{margin-right: 4px;}
-.member-board .txt-hint{font-size: 11px; color: #999999; padding: 6px 0 4px 16px;}
-.member-board .txt-aleat{color: #ef222a;}
-
-.member-alarm{margin-top: 36px;}
-.member-alarm .alarm-set .global-chk{margin-right: 15px;}
-
-.my-btn-wrap{text-align: right; margin: 12px 12px 20px 0;}
-
-
-.my-pop{display: none; position: fixed; min-width: 160px; min-height: 42px; top: 50%; left: 50%; z-index: 10; margin-top: -60px; transform: translateX(-50%); z-index: 101;}
-.my-pop p{border: 1px solid #5b5b5b; border-radius: 4px; background: #fff; padding: 20px 40px; text-align: center;}
-.my-pop p > span{display: block;}
-.my-pop p .pop-btn-wrap a.btn-default{margin-left: 6px;}
-.my-pop p .pop-content{margin-bottom: 16px; color: #333333; line-height: 18px;}
-.pop-dimm{display: none; position: fixed; width: 100%; height: 100%; z-index: 100; background: rgba(0,0,0,0.6);}
-
-
-.member-board .modify-on{background: #eef3f8;}
-.member-board .modify-on input[type="text"]{background: none; border: none; text-indent: 0; width: 95%; height: 20px;}
-.member-board .modify-on input[type="password"]{background: none; border: none; text-indent: 0; width: 95%; height: 20px;}
-.member-board.second-board{margin-top: 40px; padding-top: 40px; border-top: 1px solid #e2e2e2;}
-
-
-.my-board{border-top: 2px solid #dedede;}
-.my-board li{display: table;}
-.my-board li:hover{background: #f9f9f9;}
-.my-board li > span{display: table-cell; vertical-align: middle; height: 37px; border-bottom: 1px solid #e2e2e2;}
-.my-board .board-header{background: #f2f2f2;}
-.my-board .board-header:hover{background: #f2f2f2;}
-.my-board .board-header span{text-align: center; font-size: 12px; color: #333333; font-weight: bold;}
-
-.my-board .chk{width: 35px; text-align: center;}
-.my-board .num{width: 45px; text-align: center; font-size: 10px; color: #999999;}
-.my-board .b-name{width: 120px; text-align: center;}
-.my-board .title{width: 360px; text-align: left;}
-.my-board .title a{display: inline-block; max-width: 360px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; line-height: 37px;}
-.my-board .writer{width: 100px; text-align: center;}
-.my-board .recom{width: 100px; text-align: center; font-size: 10px; color: #999999;}
-.my-board .date{width: 110px; text-align: center; font-size: 10px; color: #999999;}
-.my-board .order{width: 230px; text-align: center;}
-.my-board .order-left{width: 112px; text-align: right; padding-right: 3px;}
-.my-board .order-right{width: 112px; text-align: left; padding-left: 3px;}
-.my-board .option{width: 54px; text-align: center;}
-
-
-/* 마이페이지 게시판 스타일 정의2 */
-.my-board.board-style2 .title{width: 580px;}
-.my-board.board-style2 .title a{max-width: 580px;}
-
-/* 마이페이지 게시판 스타일 정의3 */
-.my-board.board-style3 .title{width: 460px; text-align: center;}
-.my-board.board-style3 .title a{max-width: 460px;}
-
-/* 마이페이지 게시판 스타일 정의4 */
-.my-board.board-style4 .title{width: 690px; text-align: center;}
-.my-board.board-style4 .title a{max-width: 690px;}
-
-
-
-/* 페이징 처리 */
-.my-paginate{text-align: center; padding-top: 30px;}
-.my-paginate a{display: inline-block; font-size: 12px; padding-left: 10px;}
-.my-paginate span a:hover{color: #ff6600;}
-.my-paginate a.page-on{color: #ff6600; font-weight: bold;}
-.my-paginate a:after{display: inline-block; content: ""; width: 1px; height: 11px; background: #cccccc; vertical-align: middle; margin: 0 0 2px 10px;}
-.my-paginate .next:after{display: none;}
-.my-paginate .prev span{display: inline-block; width: 5px; height: 9px; background: url("https://www.ilbe.com/css/./img/icon_common.png") no-repeat -17px -115px; margin-right: 6px;}
-.my-paginate .next span{display: inline-block; width: 5px; height: 9px; background: url("https://www.ilbe.com/css/./img/icon_common.png") no-repeat -30px -115px; margin-left: 6px;}
-.my-paginate .prev:hover{text-decoration: none !important; color: #333333;}
-.my-paginate .next:hover{text-decoration: none !important; color: #333333;}
-.my-paginate .prev.not,.my-paginate .prev.not span{color: #d2d2d2; background-position: -17px -126px;}
-.my-paginate .next.not,.my-paginate .next.not span{color: #d2d2d2; background-position: -30px -126px;}
-
-
-.btn-act{display: inline-block; background: url("https://www.ilbe.com/css/./img/btn_common.png") no-repeat left -57px;}
-.btn-act button{height: 23px; font-size: 11px; background: url("https://www.ilbe.com/css/./img/btn_common.png") no-repeat right -57px; margin-left: 2px; padding: 0 9px 0 7px; letter-spacing: -1px; vertical-align: middle;}
-.btn-act button .ico-bottom{display: inline-block; width: 11px; height: 11px; background: url("https://www.ilbe.com/css/./img/icon_common.png") no-repeat -33px -100px; margin: 0 3px -1px 0;}
-.btn-act.btn-down button .ico-bottom{background-position: -48px -100px;}
-
-
 /* 계정 */
-
-
-#account-page{background: #f8f8f8;}
-#account-wrap{width: 100%; min-width: 824px; padding-bottom: 20px;}
-#account-wrap #sky-banner-wrap{top: 50px; margin-left: -587px;}
-
-
-.account-header-content{width: 824px; height: 50px; border-bottom: 2px solid #333333; margin: 0 auto; line-height: 50px;}
-.account-header-content:after{content: ""; display: block; clear: both;}
-.account-header-content h1{width: 132px; background: url("https://www.ilbe.com/css/./img/logo_acc.png") no-repeat left center; float: left;}
-.login-header h1{background: url("https://www.ilbe.com/css/./img/logo_acc2.png") no-repeat left center;}
-.find-header h1{background: url("https://www.ilbe.com/css/./img/logo.png") no-repeat left center;}
-.account-header-content h1 a{display: block; width: 75px; text-indent: -999px; overflow: hidden;}
-
-.account-header-menu{float: right; }
-.account-header-menu a{display: inline-block; margin-left: 10px;}
-.account-header-menu a:after{content: ""; display: inline-block; margin-left: 10px; width: 1px; height: 9px; background: #bebebe;}
-.account-header-menu a:last-child:after{display: none;}
-
-.account-location{width: 824px; margin: 40px auto 0;}
-.account-location span{display: inline-block; margin-right: 10px; color: #bbbbbb;}
-.account-location span:after{content: ""; display: inline-block; width: 4px; height: 7px; margin: -2px 0 0 10px; background: url("https://www.ilbe.com/css/./img/icon_common.png") no-repeat -65px -115px; vertical-align: middle;}
-.account-location span:last-child:after{display: none;}
-.account-location span.on{font-weight: bold; color: #333333;}
-.account-location span.on:after{background-position: -56px -115px;}
 
 .account-body{width: 774px; margin: 10px auto 0; background: #fff; padding: 30px;}
 .account-body.partner{width:600px; padding:50px 30px; margin:300px auto 0}
@@ -148,29 +15,22 @@
 .account-body .section .account-chk input[type="checkbox"]:checked + label span{background: url("https://www.ilbe.com/css/./img/icon_common.png") no-repeat -20px -139px ;}
 .account-body .section .account-chk input[type="checkbox"] + label span{display: inline-block; width: 19px; height: 19px; background: url("https://www.ilbe.com/css/./img/icon_common.png") no-repeat -20px -162px; vertical-align: top; cursor: pointer; margin-right: 8px;}
 .account-body .btn-wrap{margin-top: 20px; text-align: center;}
-.terms-area{background: #f8f8f8; border: 1px solid #dadada; padding: 20px; margin-top: 8px; line-height: 18px; color: #666666; height: 240px; overflow-y: scroll;}
-.terms-area .subscript{margin-bottom: 13px;}
-
-.terms-area ul{margin-bottom: 13px; margin-top: 4px;}
-.terms-area ol{margin-bottom: 13px; margin-top: 4px;}
-.terms-area .list-second{padding-left: 20px;}
-.terms-area h3{margin-bottom: 10px; color: #333; font-size: 12px;}
-.terms-area h4{color: #333; font-size: 12px;}
-.terms-area h5{display: inline-block; color: #333; font-size: 12px; padding: 0 5px; margin-left: 20px; background: #e6e6e6; font-weight: normal;}
-
-.terms-wrap{height: 100%; overflow: auto; border: none; margin: 0;}
 
 .account-footer{text-align: center; margin: 50px 0 30px;}
 .account-footer .copyright{margin-right: 10px; color: #333333;} 
 .account-footer a:before{content: ""; display: inline-block; margin-right: 10px; width: 1px; height: 9px; background: #bebebe;}
 
 .account-body .section > dl{overflow: hidden; text-align: center;}
+.account-body .section .make-game-info {
+    overflow: hidden;
+    text-align: center;
+    padding-left: 55px;
+}
 .account-body .section > dl > dt{float: left; width: 130px; line-height: 33px; margin-bottom: 7px; margin-left: 100px;}
-.account-body .section > dl > dt.essential{}
 .account-body .section > dl > dd{float: left; margin-bottom: 7px;}
 .account-body .section > dl:last-child > dt{margin-bottom: 0;}
 .account-body .section > dl:last-child > dd{margin-bottom: 0;}
-.account-body .section .item-value{display: inline-block; width: 304px; height: 33px; line-height: 33px; background: #f7f7f7; border-radius: 3px;}
+.account-body .section .item-value{display: inline-block; width: 304px; height: 33px; line-height: 33px; border-radius: 3px;}
 .account-body .section a.btn-default{margin-right: 4px;}
 .account-body .section .txt-hint{font-size: 11px; color: #999999; padding: 6px 0 4px 16px;}
 .account-body .section .txt-aleat{color: #ef222a;}
@@ -188,36 +48,8 @@
 }
 .account-body .section.second-board{margin-top: 40px; padding-bottom: 22px;}
 
-/* 로그인 */
-.member-enter{width: 674px; margin-top: 100px; padding: 40px 75px;}
-.member-enter .section > dl > dt{width: 80px; padding-left: 0; line-height: 43px;}
-.member-enter .section > dl > dd{height: 63px;}
-.member-enter:after{content: ""; display: block; clear: both;}
-.member-enter .section{float: left; width: 384px;}
-.member-enter .acc-banner{width: 250px; height: 250px; margin-left: 40px; margin-bottom: 0;}
-.member-enter .section .item-value{margin-right: 0; width: 288px; height: 43px; line-height: 43px;}
-.member-enter .login-set{overflow: hidden; margin-top: 10px; font-size: 12px;}
-
-a.btn-login{position: relative; display: inline-block; background: url("https://www.ilbe.com/css/./img/btn_common.png") no-repeat left -308px;}
-a.btn-login span{position: relative; display: inline-block; top: 0; left: 2px; height: 43px; background: url("https://www.ilbe.com/css/./img/btn_common.png") no-repeat 100% -308px; line-height: 43px; font-size: 12px; letter-spacing: -1px; width: 382px; font-size: 14px; font-weight: bold; color: #fff; text-align: center;}
-button.btn-login{position: relative; display: inline-block; background: url("https://www.ilbe.com/css/./img/btn_common.png") no-repeat left -308px;}
-button.btn-login span{position: relative; display: inline-block; top: 0; left: 2px; height: 43px; background: url("https://www.ilbe.com/css/./img/btn_common.png") no-repeat 100% -308px; line-height: 43px; font-size: 12px; letter-spacing: -1px; width: 382px; font-size: 14px; font-weight: bold; color: #fff; text-align: center;}
-.acc-menu{text-align: center; margin-top: 30px;}
-.acc-menu a{display: inline-block; margin-left: 10px;}
-.acc-menu a:after{content: ""; display: inline-block; margin-left: 10px; width: 1px; height: 9px; background: #bebebe;}
-.acc-menu a:last-child:after{display: none;}
-
-.member-enter .txt-guide{border: 0; margin-bottom: 16px; padding-bottom: 0; line-height: 16px;}
-
-
-/* 성인인증 */
-.certifi-header-content{width: 824px; height: 50px; border-bottom: 2px solid #333333; margin: 0 auto; line-height: 50px;}
-.certifi-header-content:after{content: ""; display: block; clear: both;}
-.certifi-header-content h1{width: 132px; background: url("https://www.ilbe.com/css/./img/logo_acc3.png") no-repeat left center; float: left;}
-.certifi-header-content h1 a{display: block; width: 75px; text-indent: -999px; overflow: hidden;}
-.txt-guide-19 {font-size:12px; color:#888888; margin-bottom:10px;}
-.btn-19 {position:relative;display:inline-block; margin-left:2px; background:none;vertical-align:middle; margin-bottom:20px;}
-.btn-19 span {position:relative; display:inline-block; height:24px; line-height:1;background:#f9f9f9;border: 1px solid #bebebe;border-radius: 2px;padding: 6px 11px;font-size: 12px;letter-spacing: -1px;box-sizing: border-box;vertical-align: top;font-family: dotum, "돋움"}
-.btn-orange span {background: #fd7318;color: #fff;border: 1px solid #eb5d00;}
-
-
+.account-body .btn-wrap .btn-orange-big{background-color: #ED7D31; color: #ffffff; font-size: 15px; padding-left: 30px; padding-right: 30px; height: 30px; border-radius: 10px;}
+.account-body #want-guest-form{display: none;}
+.account-body #want-pickup-form {
+    display: none;
+}
