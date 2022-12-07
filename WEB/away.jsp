@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="game.AwayApplyDAO" %>
+<%@ page import="game.AwayApply" %>
+<%@ page import="game.HomeWantAwayDAO" %>
+<%@ page import="game.HomeWantAway" %>
 <%@ page import="java.io.PrintWriter"%>
+<%@ page import="java.util.ArrayList"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +15,15 @@
 	<link href="./css/base.css?after" rel="stylesheet">
     <link href="./css/common.css?after" rel="stylesheet">
     <link href="./css/main.css?after" rel="stylesheet">
+    <link href="./css/mypage.css?after" rel="stylesheet">
+    <script>
+        function goPopupShowGame(game_id){
+            var pop = window.open("/showGameNotApproved.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
+        }
+        function goPopupShowGameApproved(game_id){
+            var pop = window.open("/showGameApproved.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
+        }
+    </script>
 </head>
 <body>
     <%
@@ -43,7 +58,91 @@
         <div id="container">
             <!-- 본문 -->
             <div id="content-wrap">
-                
+                <div id="type-of-game">
+                    내가 어웨이팀
+                </div>
+                <div class="away-approve">
+                    <hr>
+                    승인 대기중
+                    <%
+                        AwayApplyDAO awayApplyDAO = new AwayApplyDAO();
+                        ArrayList<AwayApply> listAA = awayApplyDAO.getGamesByUserId(user_id);
+                        ArrayList<HomeWantAway> listHWA = new ArrayList<HomeWantAway>();
+                        ArrayList<AwayApply> notAcceptListAA = new ArrayList<AwayApply>();
+                        
+                        for(int i = 0; i < listAA.size(); i++) {
+                                ArrayList<AwayApply> listAAGameId = awayApplyDAO.getAwayGamesByGameId(listAA.get(i).getGame_id_no());
+
+                                int check = 0;
+                                for(int k = 0; k < listAAGameId.size(); k++) {
+                                    if(listAAGameId.get(k).getAccept_status() == 1) {
+                                        check = 1;
+                                        break;
+                                    }
+                                }
+
+                                if(check == 0) {
+                                    listHWA.add(awayApplyDAO.getHomeGameById(listAA.get(i).getGame_id_no()));
+                                }
+                                if(check == 0) {
+                                    notAcceptListAA.add(awayApplyDAO.getAwayApplyById(listAA.get(i).getGame_id_no()));
+                                }
+                        }
+
+                        if(notAcceptListAA.isEmpty() && listHWA.isEmpty()) {
+                    %>
+                    <div id="no-game">
+                    승인 대기 중인 경기가 없습니다.
+                    </div>
+                    <%
+                        } else {
+                            for(int j = 0; j < listHWA.size(); j++) {
+                    %>
+                    <div class="game-exist">
+                        <button type="button" class="game-exist-btn" value="<%=listHWA.get(j).getId()%>" onclick="goPopupShowGame(this.value)">
+                            <%=listHWA.get(j).getRoadAddrPart1()%>
+                            |&nbsp<%=listHWA.get(j).getDate().substring(0,9)%>
+                            |&nbsp<%=listHWA.get(j).getDate().substring(11,12)%>시
+                            <%=listHWA.get(j).getDate().substring(14,15)%>분
+                        </button>
+                    </div>
+                    <%
+                            }}
+                    %>
+                </div> 
+                <div class="away-approve">
+                    <hr>
+                    승인 완료
+                    <%
+                        ArrayList<AwayApply> acceptedlistAA = awayApplyDAO.getAcceptedGamesByUserId(user_id);
+                        if(acceptedlistAA.isEmpty()) {
+                    %>
+                    <div id="no-game">
+                    승인 완료된 경기가 없습니다.
+                    </div>
+                    <%
+                        } else {
+                            
+                            for(int i = 0; i < acceptedlistAA.size(); i++) {
+                                ArrayList<HomeWantAway> acceptedlistHWA = awayApplyDAO.getGamesByGameId(acceptedlistAA.get(i).getGame_id_no());
+                                for(int j = 0; j < acceptedlistHWA.size(); j++) {
+                                
+                    %>
+                    <div class="game-exist">
+                        <button type="button" class="game-exist-btn" value="<%=acceptedlistHWA.get(j).getId()%>" onclick="goPopupShowGameApproved(this.value)">
+                            <%=acceptedlistHWA.get(j).getRoadAddrPart1()%>
+                            |&nbsp<%=acceptedlistHWA.get(j).getDate().substring(0,9)%>
+                            |&nbsp<%=acceptedlistHWA.get(j).getDate().substring(11,12)%>시
+                            <%=acceptedlistHWA.get(j).getDate().substring(14,15)%>분
+                        </button>
+                    </div>
+                    <%
+                            }}}
+                    %>
+                </div>
+                <div id="matching_btn">
+                    <button type="button" onclick="location.href='./awayWantHome.jsp'">게임 신청하기</button>
+                </div>
             </div>
             <!-- //본문 -->
             

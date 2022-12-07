@@ -22,3 +22,12 @@
 .widget ul li .ico-set .comment{font-size: 11px; font-family: tahoma, sans-serif; color: #FE6700; padding: 0 2px 0 4px;}
 .widget ul li .ico-set .comment a{font-size: 11px; font-family: tahoma, sans-serif; color: #FE6700;}
 
+.game-exist .game-exist-btn {
+    font-size: 20px;
+    height: 33px;
+    width: auto;
+    margin-top: 20px;
+}
+.game-exist {text-align: center;}
+
+.away-approve{margin-top: 50px;}

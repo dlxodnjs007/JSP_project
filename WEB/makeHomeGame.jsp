@@ -11,6 +11,31 @@
     <link href="./css/main.css?after" rel="stylesheet">
     <link href="./css/board.css?after" rel="stylesheet">
     <link href="./css/mypage.css?after" rel="stylesheet">
+    <script>
+        function chooseForm(radioname) {
+            var radios = document.getElementsByName(radioname);
+            for(var i = 0, length = radios.length; i < length; i++) {
+                document.getElementById(radios[i].value + '-form').style.display = 'none';
+                if(radios[i].checked) {
+                    document.getElementById(radios[i].value + '-form').style.display = 'block';
+                }
+            }
+        }
+
+        function goPopup(){
+            // 주소검색을 수행할 팝업 페이지를 호출합니다.
+            // 호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(https://business.juso.go.kr/addrlink/addrLinkUrl.do)를 호출하게 됩니다.
+            var pop = window.open("/jusoPopup.jsp","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
+            
+            // 모바일 웹인 경우, 호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(https://business.juso.go.kr/addrlink/addrMobileLinkUrl.do)를 호출하게 됩니다.
+            //var pop = window.open("/popup/jusoPopup.jsp","pop","scrollbars=yes, resizable=yes"); 
+        }
+
+        function jusoCallBack(roadAddrPart1){
+            // 팝업페이지에서 주소입력한 정보를 받아서, 현 페이지에 정보를 등록합니다.
+            document.form.roadAddrPart1.value = roadAddrPart1;
+        }
+    </script>
 </head>
 <body>
     <%
@@ -45,17 +70,6 @@
         <div id="container">
             <!-- 본문 -->
             <div id="content-wrap">
-                <script>
-                    function chooseForm(radioname) {
-                        var radios = document.getElementsByName(radioname);
-                        for(var i = 0, length = radios.length; i < length; i++) {
-                            document.getElementById(radios[i].value + '-form').style.display = 'none';
-                            if(radios[i].checked) {
-                                document.getElementById(radios[i].value + '-form').style.display = 'block';
-                            }
-                        }
-                    }
-                </script>
                 <div class="account-body" id="step_2">
                     <div id="game-making-button">
                         <input type="radio" name="which-game" value="want-away" onclick="chooseForm(this.name)" checked="checked">어웨이팀을 원해요
@@ -64,94 +78,136 @@
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
                         <input type="radio" name="which-game" value="want-pickup" onclick="chooseForm(this.name)">픽업게임 만들기
                     </div>
-                    <form id="want-away-form" method="post" action="GameWantAwayAction.jsp" >
+                    <!-- 어웨이팀을 원해요 폼 시작 -->
+                    <form id="want-away-form" name="form" method="post" action="homeWantAwayAction.jsp" >
                         <div class="section">
+                            
+                            <input type="text" name="home_id" style="display: none;" value="<%=user_id%>">
+                          
                             <dl class="make-game-info">
                                 <dt class="essential">시합 장소</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="location" id="location" placeholder="">
-                                </span>
+                                    <span class="item-value modify-on">
+                                        <input type="text" id="roadAddrPart1" name="roadAddrPart1" readonly>
+                                    </span>
+                                    <button type="button" id="juso-search" class="juso-search" onclick="goPopup()">
+                                        <span>
+                                            <em>주소 검색</em>
+                                        </span>
+                                    </button>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">시합 날짜 및 시간</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="game_date" id="game_date" placeholder="">
-                                </span>
+                                    <input type="datetime-local" name="date" id="game_date_time" >
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">홈 팀 인원</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="home_member_count" id="home_member_count" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_people" form="want-away-form">
+                                        <option value="5people">5명</option>
+                                        <option value="6people">6명</option>
+                                        <option value="7people">7명</option>
+                                        <option value="8people">8명</option>
+                                        <option value="9people">9명</option>
+                                        <option value="10people">10명</option>
+                                        <option value="11people">11명</option>
+                                        <option value="12people">12명</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">홈 팀 나이대</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="home_age" id="home_age" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_age" form="want-away-form">
+                                        <option value="late_10dae">10대 후반</option>
+                                        <option value="early_20dae">20대 초반</option>
+                                        <option value="middle_20dae">20대 중반</option>
+                                        <option value="late_20dae">20대 후반</option>
+                                        <option value="early_30dae">30대 초반</option>
+                                        <option value="middle_30dae">30대 중반</option>
+                                        <option value="late_30dae">30대 후반</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">홈 팀 유니폼 색상</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="home_uniform" id="home_uniform" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_uniform" form="want-away-form">
+                                        <option value="red">빨강</option>
+                                        <option value="blue">파랑</option>
+                                        <option value="black">검정</option>
+                                        <option value="white">하양</option>
+                                        <option value="yellow">노랑</option>
+                                        <option value="green">초록</option>
+                                        <option value="pink">분홍</option>
+                                        <option value="orange">주황</option>
+                                        <option value="purple">보라</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">바라는 어웨이 팀 인원</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="away_member_count" id="away_member_count" placeholder="">
-                                </span>
+                                    <select class="select-box" name="away_people" form="want-away-form">
+                                        <option value="5people">5명</option>
+                                        <option value="6people">6명</option>
+                                        <option value="7people">7명</option>
+                                        <option value="8people">8명</option>
+                                        <option value="9people">9명</option>
+                                        <option value="10people">10명</option>
+                                        <option value="11people">11명</option>
+                                        <option value="12people">12명</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">바라는 어웨이 팀 실력</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="away_level" id="away_level" placeholder="">
-                                </span>
+                                    <select class="select-box" name="away_level" form="want-away-form">
+                                        <option value="S">S</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">바라는 어웨이 팀 나이대</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="away_age" id="away_age" placeholder="">
-                                </span>
+                                    <select class="select-box" name="away_age" form="want-away-form">
+                                        <option value="late_10dae">10대 후반</option>
+                                        <option value="early_20dae">20대 초반</option>
+                                        <option value="middle_20dae">20대 중반</option>
+                                        <option value="late_20dae">20대 후반</option>
+                                        <option value="early_30dae">30대 초반</option>
+                                        <option value="middle_30dae">30대 중반</option>
+                                        <option value="late_30dae">30대 후반</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">샤워 시설</dt>
-                                <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="shower" id="shower" placeholder="">
-                                </span>
+                                <dd class="radio">
+                                <input type="radio" name="shower" value="shower_yes">유
+                                &nbsp &nbsp 
+                                <input type="radio" name="shower" value="shower_no">무
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">주차 시설</dt>
-                                <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="parking" id="parking" placeholder="">
-                                </span>
+                                 <dd class="radio">
+                                <input type="radio" name="parking" value="parking_yes">유
+                                &nbsp &nbsp 
+                                <input type="radio" name="parking" value="parking_no">무
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">기타 주의 사항</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="warning" id="warning" placeholder="">
-                                </span>
+                                <textarea name="warning" cols="40" rows="4"></textarea>
                                 </dd>
                             </dl>
                         </div>
@@ -164,94 +220,135 @@
                             </button>
                         </div>
                     </form>
+                    <!-- 어웨이팀을 원해요 폼 끝 -->
+                    <!-- 게스트를 원해요 폼 시작 -->
                     <form id="want-guest-form" method="post" action="GameWantAwayAction.jsp">
                         <div class="section">
                             <dl class="make-game-info">
                                 <dt class="essential">시합 장소</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="location" id="location" placeholder="">
-                                </span>
+                                    <span class="item-value modify-on">
+                                        <input type="text" id="roadAddrPart1" name="roadAddrPart1" readonly>
+                                    </span>
+                                    <button type="button" id="juso-search" class="juso-search" onclick="goPopup()">
+                                        <span>
+                                            <em>주소 검색</em>
+                                        </span>
+                                    </button>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">시합 날짜 및 시간</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="game_date" id="game_date" placeholder="">
-                                </span>
+                                    <input type="datetime-local" name="game_date_time" id="game_date_time" >
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">홈 팀 인원</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="home_member_count" id="home_member_count" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_people_count" form="want-away-form">
+                                        <option value="5people">5명</option>
+                                        <option value="6people">6명</option>
+                                        <option value="7people">7명</option>
+                                        <option value="8people">8명</option>
+                                        <option value="9people">9명</option>
+                                        <option value="10people">10명</option>
+                                        <option value="11people">11명</option>
+                                        <option value="12people">12명</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">홈 팀 나이대</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="home_age" id="home_age" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_age" form="want-away-form">
+                                        <option value="late_10dae">10대 후반</option>
+                                        <option value="early_20dae">20대 초반</option>
+                                        <option value="middle_20dae">20대 중반</option>
+                                        <option value="late_20dae">20대 후반</option>
+                                        <option value="early_30dae">30대 초반</option>
+                                        <option value="middle_30dae">30대 중반</option>
+                                        <option value="late_30dae">30대 후반</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">홈 팀 유니폼 색상</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="home_uniform" id="home_uniform" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_uniform" form="want-away-form">
+                                        <option value="red">빨강</option>
+                                        <option value="blue">파랑</option>
+                                        <option value="black">검정</option>
+                                        <option value="white">하양</option>
+                                        <option value="yellow">노랑</option>
+                                        <option value="green">초록</option>
+                                        <option value="pink">분홍</option>
+                                        <option value="orange">주황</option>
+                                        <option value="purple">보라</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
-                                <dt class="essential">바라는 게스트 인원</dt>
+                                <dt class="essential">바라는 어웨이 팀 인원</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="guest_member_count" id="guest_member_count" placeholder="">
-                                </span>
+                                    <select class="select-box" name="away_people_count" form="want-away-form">
+                                        <option value="5people">5명</option>
+                                        <option value="6people">6명</option>
+                                        <option value="7people">7명</option>
+                                        <option value="8people">8명</option>
+                                        <option value="9people">9명</option>
+                                        <option value="10people">10명</option>
+                                        <option value="11people">11명</option>
+                                        <option value="12people">12명</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
-                                <dt class="essential">바라는 게스트 포지션</dt>
+                                <dt class="essential">바라는 어웨이 팀 실력</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="guest_position" id="guest_position" placeholder="">
-                                </span>
+                                    <select class="select-box" name="away_people_count" form="want-away-form">
+                                        <option value="S">S</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
-                                <dt class="essential">바라는 게스트 나이대</dt>
+                                <dt class="essential">바라는 어웨이 팀 나이대</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="guest_age" id="guest_age" placeholder="">
-                                </span>
+                                    <select class="select-box" name="away_age" form="want-away-form">
+                                        <option value="late_10dae">10대 후반</option>
+                                        <option value="early_20dae">20대 초반</option>
+                                        <option value="middle_20dae">20대 중반</option>
+                                        <option value="late_20dae">20대 후반</option>
+                                        <option value="early_30dae">30대 초반</option>
+                                        <option value="middle_30dae">30대 중반</option>
+                                        <option value="late_30dae">30대 후반</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">샤워 시설</dt>
-                                <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="shower" id="shower" placeholder="">
-                                </span>
+                                <dd class="radio">
+                                <input type="radio" name="can_shower" value="shower_yes">유
+                                &nbsp &nbsp 
+                                <input type="radio" name="can_shower" value="shower_no">무
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">주차 시설</dt>
-                                <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="parking" id="parking" placeholder="">
-                                </span>
+                                 <dd class="radio">
+                                <input type="radio" name="can_parking" value="parking_yes">유
+                                &nbsp &nbsp 
+                                <input type="radio" name="can_parking" value="parking_no">무
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">기타 주의 사항</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="warning" id="warning" placeholder="">
-                                </span>
+                                <textarea name="warning" cols="40" rows="4">
+                                </textarea>
                                 </dd>
                             </dl>
                         </div>
@@ -264,70 +361,135 @@
                             </button>
                         </div>
                     </form>
+                    <!-- 게스트를 원해요 폼 끝 -->
+                    <!-- 픽업게임을 원해요 폼 시작 -->
                     <form id="want-pickup-form" method="post" action="GameWantAwayAction.jsp">
                         <div class="section">
                             <dl class="make-game-info">
                                 <dt class="essential">시합 장소</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="location" id="location" placeholder="">
-                                </span>
+                                    <span class="item-value modify-on">
+                                        <input type="text" id="roadAddrPart1" name="roadAddrPart1" readonly>
+                                    </span>
+                                    <button type="button" id="juso-search" class="juso-search" onclick="goPopup()">
+                                        <span>
+                                            <em>주소 검색</em>
+                                        </span>
+                                    </button>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">시합 날짜 및 시간</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="game_date" id="game_date" placeholder="">
-                                </span>
+                                    <input type="datetime-local" name="game_date_time" id="game_date_time" >
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
-                                <dt class="essential">게스트 인원</dt>
+                                <dt class="essential">홈 팀 인원</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="guest_member_count" id="guest_member_count" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_people_count" form="want-away-form">
+                                        <option value="5people">5명</option>
+                                        <option value="6people">6명</option>
+                                        <option value="7people">7명</option>
+                                        <option value="8people">8명</option>
+                                        <option value="9people">9명</option>
+                                        <option value="10people">10명</option>
+                                        <option value="11people">11명</option>
+                                        <option value="12people">12명</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
-                                <dt class="essential">게스트 나이대</dt>
+                                <dt class="essential">홈 팀 나이대</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="guest_age" id="guest_age" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_age" form="want-away-form">
+                                        <option value="late_10dae">10대 후반</option>
+                                        <option value="early_20dae">20대 초반</option>
+                                        <option value="middle_20dae">20대 중반</option>
+                                        <option value="late_20dae">20대 후반</option>
+                                        <option value="early_30dae">30대 초반</option>
+                                        <option value="middle_30dae">30대 중반</option>
+                                        <option value="late_30dae">30대 후반</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
-                                <dt class="essential">유니폼 색상</dt>
+                                <dt class="essential">홈 팀 유니폼 색상</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="uniform_color" id="uniform_color" placeholder="">
-                                </span>
+                                    <select class="select-box" name="home_uniform" form="want-away-form">
+                                        <option value="red">빨강</option>
+                                        <option value="blue">파랑</option>
+                                        <option value="black">검정</option>
+                                        <option value="white">하양</option>
+                                        <option value="yellow">노랑</option>
+                                        <option value="green">초록</option>
+                                        <option value="pink">분홍</option>
+                                        <option value="orange">주황</option>
+                                        <option value="purple">보라</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="make-game-info">
+                                <dt class="essential">바라는 어웨이 팀 인원</dt>
+                                <dd>
+                                    <select class="select-box" name="away_people_count" form="want-away-form">
+                                        <option value="5people">5명</option>
+                                        <option value="6people">6명</option>
+                                        <option value="7people">7명</option>
+                                        <option value="8people">8명</option>
+                                        <option value="9people">9명</option>
+                                        <option value="10people">10명</option>
+                                        <option value="11people">11명</option>
+                                        <option value="12people">12명</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="make-game-info">
+                                <dt class="essential">바라는 어웨이 팀 실력</dt>
+                                <dd>
+                                    <select class="select-box" name="away_people_count" form="want-away-form">
+                                        <option value="S">S</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="make-game-info">
+                                <dt class="essential">바라는 어웨이 팀 나이대</dt>
+                                <dd>
+                                    <select class="select-box" name="away_age" form="want-away-form">
+                                        <option value="late_10dae">10대 후반</option>
+                                        <option value="early_20dae">20대 초반</option>
+                                        <option value="middle_20dae">20대 중반</option>
+                                        <option value="late_20dae">20대 후반</option>
+                                        <option value="early_30dae">30대 초반</option>
+                                        <option value="middle_30dae">30대 중반</option>
+                                        <option value="late_30dae">30대 후반</option>
+                                    </select>
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">샤워 시설</dt>
-                                <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="shower" id="shower" placeholder="">
-                                </span>
+                                <dd class="radio">
+                                <input type="radio" name="can_shower" value="shower_yes">유
+                                &nbsp &nbsp 
+                                <input type="radio" name="can_shower" value="shower_no">무
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">주차 시설</dt>
-                                <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="parking" id="parking" placeholder="">
-                                </span>
+                                 <dd class="radio">
+                                <input type="radio" name="can_parking" value="parking_yes">유
+                                &nbsp &nbsp 
+                                <input type="radio" name="can_parking" value="parking_no">무
                                 </dd>
                             </dl>
                             <dl class="make-game-info">
                                 <dt class="essential">기타 주의 사항</dt>
                                 <dd>
-                                <span class="item-value modify-on">
-                                <input type="text" name="warning" id="warning" placeholder="">
-                                </span>
+                                <textarea name="warning" cols="40" rows="4">
+                                </textarea>
                                 </dd>
                             </dl>
                         </div>
@@ -340,6 +502,7 @@
                             </button>
                         </div>
                     </form>
+                    <!-- 픽업게임을 원해요 폼 끝 -->
                 </div>
                 <!-- 본문 끝-->           
             </div>
