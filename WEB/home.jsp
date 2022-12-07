@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.PrintWriter"%>
+<%@ page import="game.HomeWantAwayDAO" %>
+<%@ page import="game.HomeWantAway" %>
+<%@ page import="java.util.ArrayList"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +12,11 @@
 	<link href="./css/base.css?after" rel="stylesheet">
     <link href="./css/common.css?after" rel="stylesheet">
     <link href="./css/main.css?after" rel="stylesheet">
+    <script>
+        function goPopupShowGame(game_id){
+            var pop = window.open("/showHomeGame.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
+        }
+    </script>
 </head>
 <body>
     <%
@@ -46,19 +54,29 @@
                 <div id="type-of-game">
                     내가 홈팀
                 </div>
-                <%-- <%
-                    if(game_mady_by_home == null) {
-                %> --%>
+                <%
+                    HomeWantAwayDAO homeWantAwayDAO = new HomeWantAwayDAO();
+                    ArrayList<HomeWantAway> list = homeWantAwayDAO.getGame(user_id);
+                    if(list.isEmpty()) {
+                %>
                 <div id="no-game">
                     등록된 홈 경기가 없습니다.
                 </div>
-                <%-- <%
-                    } else {
-                %>
-                
                 <%
-                    }
-                %> --%>
+                    } else {
+                        for(int i = 0; i < list.size(); i++) {
+                %>
+                <div class="game-exist">
+                    <button type="button" class="game-exist-btn" value="<%=list.get(i).getId()%>" onclick="goPopupShowGame(this.value)">
+                        <%=list.get(i).getRoadAddrPart1()%>
+                        |&nbsp<%=list.get(i).getDate().substring(0,9)%>
+                        |&nbsp<%=list.get(i).getDate().substring(11,12)%>시
+                        <%=list.get(i).getDate().substring(14,15)%>분
+                    </button>
+                </div>
+                <%
+                        }}
+                %>
                 <div id="matching_btn">
                     <button type="button" onclick="location.href='./makeHomeGame.jsp'">홈 만들기</button>
                 </div>

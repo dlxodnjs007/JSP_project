@@ -23,9 +23,20 @@
 .account-body .section > dl{overflow: hidden; text-align: center;}
 .account-body .section .make-game-info {
     overflow: hidden;
-    text-align: center;
     padding-left: 55px;
 }
+
+.account-body .section .make-game-info .radio{
+    vertical-align: middle;
+    font-size: 15px;
+    
+    margin-top: 7px;
+}
+
+.account-body .section .make-game-info > textarea {
+    background-color: #eef3f8;
+}
+
 .account-body .section > dl > dt{float: left; width: 130px; line-height: 33px; margin-bottom: 7px; margin-left: 100px;}
 .account-body .section > dl > dd{float: left; margin-bottom: 7px;}
 .account-body .section > dl:last-child > dt{margin-bottom: 0;}
@@ -48,8 +59,11 @@
 }
 .account-body .section.second-board{margin-top: 40px; padding-bottom: 22px;}
 
-.account-body .btn-wrap .btn-orange-big{background-color: #ED7D31; color: #ffffff; font-size: 15px; padding-left: 30px; padding-right: 30px; height: 30px; border-radius: 10px;}
+.account-body .btn-wrap .btn-orange-big{border:none; background-color: #ED7D31; color: #ffffff; font-size: 15px; padding-left: 30px; padding-right: 30px; height: 30px; border-radius: 10px;}
 .account-body #want-guest-form{display: none;}
 .account-body #want-pickup-form {
     display: none;
 }
+.account-body .section .juso-search{height: 33px;}
+.account-body .section .select-box{font-size: 18px; height: 33px; width: 120px; text-align: center;}
+.account-body .section #game_date_time {height: 33px; width: 304px; text-align: center; font-size: 15px;}

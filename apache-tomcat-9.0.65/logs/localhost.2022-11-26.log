@@ -1,0 +1,930 @@
+26-Nov-2022 01:36:01.219 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/matching.jsp]의 [14] 행에서 오류가 발생했습니다.
+user_id cannot be resolved to a variable
+11:     <link href="./css/main.css?after" rel="stylesheet">
+12:     <script>
+13:         function loginCheck(url) {
+14:             var user_id = "<%=user_id%>"
+15:             if(user_id == null) {
+16:                 alert("濡?렇???? 癒쇱? ??二쇱???");
+17:             }
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/matching.jsp]의 [14] 행에서 오류가 발생했습니다.
+user_id cannot be resolved to a variable
+11:     <link href="./css/main.css?after" rel="stylesheet">
+12:     <script>
+13:         function loginCheck(url) {
+14:             var user_id = "<%=user_id%>"
+15:             if(user_id == null) {
+16:                 alert("濡?렇???? 癒쇱? ??二쇱???");
+17:             }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 14:26:57.829 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:         
+32:         UserDAO userDAO = new UserDAO();
+33:         int result = userDAO.login(user.getUser_id(), user.getPassword());
+34:         String page_now = request.getParameter("loginButton")
+35: 
+36:         if(result == 1) {
+37:             session.setAttribute("user_id", user.getUser_id());
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete Expression
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "else Statement" to complete IfStatement
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete Block
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+코드 생성된 자바 파일 [C:\Cap_de\apache-tomcat-9.0.65\work\Catalina\localhost\ROOT\org\apache\jsp\loginAction_jsp.java]의 [216] 행에서 오류가 발생했습니다.
+Syntax error on token "}", delete this token
+
+코드 생성된 자바 파일 [C:\Cap_de\apache-tomcat-9.0.65\work\Catalina\localhost\ROOT\org\apache\jsp\loginAction_jsp.java]의 [217] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:         
+32:         UserDAO userDAO = new UserDAO();
+33:         int result = userDAO.login(user.getUser_id(), user.getPassword());
+34:         String page_now = request.getParameter("loginButton")
+35: 
+36:         if(result == 1) {
+37:             session.setAttribute("user_id", user.getUser_id());
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete Expression
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "else Statement" to complete IfStatement
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete Block
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = <%=page_now%> + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+코드 생성된 자바 파일 [C:\Cap_de\apache-tomcat-9.0.65\work\Catalina\localhost\ROOT\org\apache\jsp\loginAction_jsp.java]의 [216] 행에서 오류가 발생했습니다.
+Syntax error on token "}", delete this token
+
+코드 생성된 자바 파일 [C:\Cap_de\apache-tomcat-9.0.65\work\Catalina\localhost\ROOT\org\apache\jsp\loginAction_jsp.java]의 [217] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 14:33:38.739 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:         
+32:         UserDAO userDAO = new UserDAO();
+33:         int result = userDAO.login(user.getUser_id(), user.getPassword());
+34:         String page_now = request.getParameter("loginButton")
+35: 
+36:         if(result == 1) {
+37:             session.setAttribute("user_id", user.getUser_id());
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:         
+32:         UserDAO userDAO = new UserDAO();
+33:         int result = userDAO.login(user.getUser_id(), user.getPassword());
+34:         String page_now = request.getParameter("loginButton")
+35: 
+36:         if(result == 1) {
+37:             session.setAttribute("user_id", user.getUser_id());
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 14:33:48.047 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:         
+32:         UserDAO userDAO = new UserDAO();
+33:         int result = userDAO.login(user.getUser_id(), user.getPassword());
+34:         String page_now = request.getParameter("loginButton")
+35: 
+36:         if(result == 1) {
+37:             session.setAttribute("user_id", user.getUser_id());
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:         
+32:         UserDAO userDAO = new UserDAO();
+33:         int result = userDAO.login(user.getUser_id(), user.getPassword());
+34:         String page_now = request.getParameter("loginButton")
+35: 
+36:         if(result == 1) {
+37:             session.setAttribute("user_id", user.getUser_id());
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 14:34:05.231 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " page_now "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 19:03:03.137 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token ""page_now"", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token ""page_now"", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 19:03:17.966 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token ""page_now"", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token ""page_now"", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href = " "page_now" "+'.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 19:10:43.383 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href =" page_now " + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href =" page_now " + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href =" page_now " + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "page_now", invalid AssignmentOperator
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href =" page_now " + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 19:13:07.077 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Invalid character constant
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href ="+ 'page_now' +" + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Invalid character constant
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href ="+ 'page_now' +" + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2022 19:13:14.296 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Invalid character constant
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href ="+ 'page_now' +" + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/loginAction.jsp]의 [40] 행에서 오류가 발생했습니다.
+Invalid character constant
+37:             session.setAttribute("user_id", user.getUser_id());
+38:             PrintWriter script = response.getWriter();
+39:             script.println("<script>");
+40:             script.println("location.href ="+ 'page_now' +" + '.jsp'");
+41:             script.println("</script>");
+42:         }
+43:         else if(result == 0) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:509)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
