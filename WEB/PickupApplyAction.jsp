@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="game.AwayApplyDAO" %>
-<%@ page import="game.AwayApply" %>
+<%@ page import="game.PickupApplyDAO" %>
+<%@ page import="game.PickupApply" %>
 <%@ page import="java.io.PrintWriter" %>
 <% request.setCharacterEncoding("UTF-8"); %>
 
-<jsp:useBean id="away_apply" class="game.AwayApply" scope="page"/>
-<jsp:setProperty name="away_apply" property="game_id_no"/>
-<jsp:setProperty name="away_apply" property="a_team_name"/>
-<jsp:setProperty name="away_apply" property="away_id"/>
-<jsp:setProperty name="away_apply" property="away_people"/>
-<jsp:setProperty name="away_apply" property="away_level"/>
-<jsp:setProperty name="away_apply" property="away_age"/>
+<jsp:useBean id="pickup_apply" class="game.PickupApply" scope="page"/>
+<jsp:setProperty name="pickup_apply" property="game_id_no"/>
+<jsp:setProperty name="pickup_apply" property="guest_id"/>
+<jsp:setProperty name="pickup_apply" property="name"/>
+<jsp:setProperty name="pickup_apply" property="height"/>
+<jsp:setProperty name="pickup_apply" property="position"/>
+<jsp:setProperty name="pickup_apply" property="age"/>
 
 <!DOCTYPE html>
 <html>
@@ -21,8 +21,8 @@
 </head>
 <body>
     <%
-        AwayApplyDAO AwayApplyDAO = new AwayApplyDAO();
-        int result = AwayApplyDAO.setApplyAway(away_apply);
+        PickupApplyDAO PickupApplyDAO = new PickupApplyDAO();
+        int result = PickupApplyDAO.setApplyPickup(pickup_apply);
 
         if(result == -1) {
             PrintWriter script = response.getWriter();

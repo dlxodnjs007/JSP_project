@@ -3,6 +3,7 @@ package game;
 public class HomeWantAway {
     private int id;
     private String home_id;
+    private String h_team_name;
     private String roadAddrPart1;
     private String date;
     private String home_people;
@@ -26,6 +27,12 @@ public class HomeWantAway {
     }
     public void setHome_id(String home_id) {
         this.home_id = home_id;
+    }
+    public String getH_team_name() {
+        return h_team_name;
+    }
+    public void setH_team_name(String h_team_name) {
+        this.h_team_name = h_team_name;
     }
     public String getRoadAddrPart1() {
         return roadAddrPart1;

@@ -9,8 +9,7 @@
 	//request.setCharacterEncoding("EUC-KR");  //해당시스템의 인코딩타입이 EUC-KR일경우에
 	String inputYn = request.getParameter("inputYn"); 
 	String roadAddrPart1 = request.getParameter("roadAddrPart1"); 
-	
-
+	String gameType = request.getParameter("id"); 
 %>
 </head>
 <script language="javascript">
@@ -24,6 +23,7 @@
 
 function init(){
 	var url = location.href;
+	var gameType = "<%=gameType%>"
 	var confmKey = "devU01TX0FVVEgyMDIyMTIwMzE2MTc1NTExMzI5MTU=";
 	var resultType = "4"; // 도로명주소 검색결과 화면 출력내용, 1 : 도로명, 2 : 도로명+지번+상세보기(관련지번, 관할주민센터), 3 : 도로명+상세보기(상세건물명), 4 : 도로명+지번+상세보기(관련지번, 관할주민센터, 상세건물명)
 	var inputYn= "<%=inputYn%>";
@@ -34,12 +34,16 @@ function init(){
 		document.form.action="https://business.juso.go.kr/addrlink/addrLinkUrl.do"; //인터넷망
 		//document.form.action="https://business.juso.go.kr/addrlink/addrMobileLinkUrl.do"; //모바일 웹인 경우, 인터넷망
 		document.form.submit();
-	}else{
+	} else if(gameType == 'away'){
 		opener.jusoCallBack("<%=roadAddrPart1%>");
 		window.close();
-		}
+	} else if(gameType == 'pickup'){
+		opener.pickup_jusoCallBack("<%=roadAddrPart1%>");
+		window.close();
+	}
 }
 </script>
+
 <body onload="init();">
 	<form id="form" name="form" method="post">
 		<input type="hidden" id="confmKey" name="confmKey" value=""/>

@@ -66,7 +66,7 @@
                     승인 대기중
                     <%
                         AwayApplyDAO awayApplyDAO = new AwayApplyDAO();
-                        ArrayList<AwayApply> listAA = awayApplyDAO.getGamesByUserId(user_id);
+                        ArrayList<AwayApply> listAA = awayApplyDAO.getNotAcceptedGamesByUserId(user_id);
                         ArrayList<HomeWantAway> listHWA = new ArrayList<HomeWantAway>();
                         ArrayList<AwayApply> notAcceptListAA = new ArrayList<AwayApply>();
                         
@@ -85,7 +85,7 @@
                                     listHWA.add(awayApplyDAO.getHomeGameById(listAA.get(i).getGame_id_no()));
                                 }
                                 if(check == 0) {
-                                    notAcceptListAA.add(awayApplyDAO.getAwayApplyById(listAA.get(i).getGame_id_no()));
+                                    notAcceptListAA.add(awayApplyDAO.getAwayGameByGameId(listAA.get(i).getGame_id_no()));
                                 }
                         }
 
@@ -100,9 +100,10 @@
                     %>
                     <div class="game-exist">
                         <button type="button" class="game-exist-btn" value="<%=listHWA.get(j).getId()%>" onclick="goPopupShowGame(this.value)">
+                            <%=listHWA.get(j).getH_team_name()%>&nbsp—
                             <%=listHWA.get(j).getRoadAddrPart1()%>
-                            |&nbsp<%=listHWA.get(j).getDate().substring(0,9)%>
-                            |&nbsp<%=listHWA.get(j).getDate().substring(11,12)%>시
+                            —&nbsp<%=listHWA.get(j).getDate().substring(0,9)%>
+                            —&nbsp<%=listHWA.get(j).getDate().substring(11,12)%>시
                             <%=listHWA.get(j).getDate().substring(14,15)%>분
                         </button>
                     </div>

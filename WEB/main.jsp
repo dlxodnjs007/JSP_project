@@ -114,7 +114,7 @@
                         if(user_id == null) {
                     %>
                     <div class="login-wrap">
-                        <form id="loginForm" method="post" action="loginAction.jsp" accept-charset="utf-8">
+                        <form id="loginForm" method="post" action="./loginAction.jsp" accept-charset="utf-8">
                             <div class="login-box">
                                 <span>
                                     <input type="text" name="user_id" placeholder="아이디" >

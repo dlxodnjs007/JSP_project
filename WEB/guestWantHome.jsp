@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="game.HomeWantAwayDAO" %>
-<%@ page import="game.HomeWantAway" %>
 <%@ page import="game.PickupDAO" %>
 <%@ page import="game.Pickup" %>
+<%@ page import="game.PickupApply" %>
+<%@ page import="game.PickupApplyDAO" %>
 <%@ page import="java.util.ArrayList"%>
+<%@ page import="java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
@@ -14,12 +15,10 @@
 	<link href="./css/base.css?after" rel="stylesheet">
     <link href="./css/common.css?after" rel="stylesheet">
     <link href="./css/main.css?after" rel="stylesheet">
+    <link href="./css/mypage.css?after" rel="stylesheet">
     <script>
         function goPopupShowGame(game_id){
-            var pop = window.open("/showHomeGame.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
-        }
-        function PopPickGame(game_id){
-            var pop = window.open("/showPickupGame.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
+            var pop = window.open("/GuestToHome.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
         }
     </script>
 </head>
@@ -57,51 +56,36 @@
             <!-- 본문 -->
             <div id="content-wrap">
                 <div id="type-of-game">
-                    내가 홈팀
+                    내가 게스트 — 기다리고 있는 픽업게임 목록
                 </div>
                 <%
-                    HomeWantAwayDAO homeWantAwayDAO = new HomeWantAwayDAO();
-                    ArrayList<HomeWantAway> list = homeWantAwayDAO.getGame(user_id);
                     PickupDAO pickupDAO = new PickupDAO();
-                    ArrayList<Pickup> pickup_list = pickupDAO.getGamesByUserId(user_id);
-                    if(list.isEmpty() && pickup_list.isEmpty()) {
+                    ArrayList<Pickup> listP = pickupDAO.getAllGames();
+                    PickupApplyDAO pickupApplyDAO = new PickupApplyDAO();
+
+                    if(listP.isEmpty()) {
                 %>
                 <div id="no-game">
-                    등록된 홈 경기가 없습니다.
+                    기다리고 있는 홈팀이 없습니다.
                 </div>
                 <%
                     } else {
-                        for(int i = 0; i < list.size(); i++) {
+                        for(int i = 0; i < listP.size(); i++) {
+                            if((pickupApplyDAO.checkApply(listP.get(i).getId_no(), user_id)) == false) {
                 %>
                 <div class="game-exist">
-                    <button type="button" class="game-exist-btn" value="<%=list.get(i).getId()%>" onclick="goPopupShowGame(this.value)">
-                        <%=list.get(i).getH_team_name()%>&nbsp—
-                        <%=list.get(i).getRoadAddrPart1()%>
-                        —&nbsp<%=list.get(i).getDate().substring(0,9)%>
-                        —&nbsp<%=list.get(i).getDate().substring(11,12)%>시
-                        <%=list.get(i).getDate().substring(14,15)%>분
+                    <button type="button" class="game-exist-btn" value="<%=listP.get(i).getId_no()%>" onclick="goPopupShowGame(this.value)">
+                        <%=listP.get(i).getRoadAddrPart1()%>
+                        —&nbsp<%=listP.get(i).getDate().substring(0,9)%>
+                        —&nbsp<%=listP.get(i).getDate().substring(11,12)%>시
+                        <%=listP.get(i).getDate().substring(14,15)%>분
                     </button>
                 </div>
                 <%
-                        } for(int i = 0; i < pickup_list.size(); i++) {
+                        }}}
                 %>
-                <div class="game-exist">
-                    <button type="button" class="game-exist-btn-pickup" value="<%=pickup_list.get(i).getId_no()%>" onclick="PopPickGame(this.value)">
-                        픽업게임&nbsp—
-                        <%=pickup_list.get(i).getRoadAddrPart1()%>
-                        —&nbsp<%=pickup_list.get(i).getDate().substring(0,9)%>
-                        —&nbsp<%=pickup_list.get(i).getDate().substring(11,12)%>시
-                        <%=pickup_list.get(i).getDate().substring(14,15)%>분
-                    </button>
-                </div>
-                <%
-                        }}
-                %>
-                <div id="matching_btn">
-                    <button type="button" onclick="location.href='./makeHomeGame.jsp'">홈 만들기</button>
-                </div>
             </div>
-            <!-- 본문 끝-->
+            <!-- //본문 -->
             
             <!-- aside -->
             <div id="aside-wrap">

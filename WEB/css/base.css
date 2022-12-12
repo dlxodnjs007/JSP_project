@@ -71,11 +71,6 @@ textarea::-webkit-input-placeholder{color: #becad5; font-size: 12px; line-height
 textarea:-ms-input-placeholder{color: #becad5; font-size: 12px; line-height: 18px;}
 textarea{overflow: auto;}
 
-button,
-button:focus,
-button:active{
-	padding: 0;
-}
 button span{position: relative;}
 
 input{

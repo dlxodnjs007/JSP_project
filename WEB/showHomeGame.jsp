@@ -17,6 +17,9 @@
     <link href="./css/main.css?after" rel="stylesheet">
 </head>
 <script>
+    function homeGameCancel(cancel_info) {
+        location.href = "HomeGameCancelAction.jsp?"+cancel_info;
+    }
     function matchAction(apply_id) {
         location.href = "HomeAwayMatchAction.jsp?apply_id="+apply_id;
     }
@@ -43,6 +46,8 @@
             HomeWantAway homeWantAway = homeWantAwayDAO.getGameById(game_id);
         %>
         <div class="game-exist">
+            <%=homeWantAway.getH_team_name()%>
+            <br>
             <%=homeWantAway.getRoadAddrPart1()%>
             <br>
             <%=homeWantAway.getDate().substring(0,9)%>
@@ -67,7 +72,7 @@
             <br>
             <%=homeWantAway.getWarning()%>
             <br>
-            <button type="button" class="game-exist-btn" onclick="">
+            <button type="button" class="game-exist-btn" value="id=<%=game_id%>&home_id=<%=user_id%>" onclick="homeGameCancel(this.value)">
                 취소
             </button>
         </div>
@@ -81,7 +86,7 @@
         <br>
         <%
             AwayApplyDAO awayApplyDAO = new AwayApplyDAO();
-            ArrayList<AwayApply> list = awayApplyDAO.getAppliedGamesByGameId(game_id);
+            ArrayList<AwayApply> list = awayApplyDAO.getAwayGamesByGameId(game_id);
             int check = 0;
             for(int i = 0; i < list.size(); i++) {
                 if(list.get(i).getAccept_status() == 1) {
@@ -100,7 +105,7 @@
                     for(int i = 0; i < list.size(); i++) {
                         if(list.get(i).getAccept_status() == 0) {
         %>
-        <%=list.get(i).getAway_id()%>-<%=list.get(i).getAway_people()%>-<%=list.get(i).getAway_level()%>-<%=list.get(i).getAway_age()%>
+        <%=list.get(i).getA_team_name()%>&nbsp—&nbsp<%=list.get(i).getAway_id()%>&nbsp—&nbsp<%=list.get(i).getAway_people()%>&nbsp—&nbsp<%=list.get(i).getAway_level()%>&nbsp—&nbsp<%=list.get(i).getAway_age()%>
         <button type="button" class="game-exist-btn" value="<%=list.get(i).getApply_id()%>" onclick="matchAction(this.value)">
             매칭
         </button>
@@ -120,7 +125,7 @@
              for(int i = 0; i < list.size(); i++) {
                 if(list.get(i).getAccept_status() == 1) {
         %>
-        <%=list.get(i).getAway_id()%>-<%=list.get(i).getAway_people()%>-<%=list.get(i).getAway_level()%>-<%=list.get(i).getAway_age()%>
+        <%=list.get(i).getA_team_name()%>&nbsp—&nbsp<%=list.get(i).getAway_id()%>&nbsp—&nbsp<%=list.get(i).getAway_people()%>&nbsp—&nbsp<%=list.get(i).getAway_level()%>&nbsp—&nbsp<%=list.get(i).getAway_age()%>
         <button type="button" class="game-exist-btn" value="<%=list.get(i).getApply_id()%>" onclick="matchCancelAction(this.value)">
             취소
         </button>

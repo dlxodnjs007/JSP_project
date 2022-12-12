@@ -60,7 +60,7 @@
                 </div>
                 <%
                     HomeWantAwayDAO homeWantAwayDAO = new HomeWantAwayDAO();
-                    ArrayList<HomeWantAway> listHWA = homeWantAwayDAO.getAllGame();
+                    ArrayList<HomeWantAway> listHWA = homeWantAwayDAO.getAllGames();
                     AwayApplyDAO awayApplyDAO = new AwayApplyDAO();
 
                     if(listHWA.isEmpty()) {
@@ -75,9 +75,10 @@
                 %>
                 <div class="game-exist">
                     <button type="button" class="game-exist-btn" value="<%=listHWA.get(i).getId()%>" onclick="goPopupShowGame(this.value)">
+                        <%=listHWA.get(i).getH_team_name()%>&nbsp—
                         <%=listHWA.get(i).getRoadAddrPart1()%>
-                        |&nbsp<%=listHWA.get(i).getDate().substring(0,9)%>
-                        |&nbsp<%=listHWA.get(i).getDate().substring(11,12)%>시
+                        —&nbsp<%=listHWA.get(i).getDate().substring(0,9)%>
+                        —&nbsp<%=listHWA.get(i).getDate().substring(11,12)%>시
                         <%=listHWA.get(i).getDate().substring(14,15)%>분
                     </button>
                 </div>

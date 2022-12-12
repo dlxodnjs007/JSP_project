@@ -28,6 +28,18 @@
     width: auto;
     margin-top: 20px;
 }
+.game-exist .game-exist-btn-pickup {
+    background-color: bisque;
+    border : 1px solid #888888;
+    border-radius: 2px;
+    font-size: 20px;
+    height: 33px;
+    width: auto;
+    margin-top: 20px;
+}
+.game-exist .game-exist-btn-pickup:hover {
+    filter: brightness(0.9);
+}
 .game-exist {text-align: center;}
 
 .away-approve{margin-top: 50px;}

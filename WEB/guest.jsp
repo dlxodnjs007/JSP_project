@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="game.PickupDAO" %>
+<%@ page import="game.Pickup" %>
+<%@ page import="game.PickupApply" %>
+<%@ page import="game.PickupApplyDAO" %>
 <%@ page import="java.io.PrintWriter"%>
+<%@ page import="java.util.ArrayList"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +15,15 @@
 	<link href="./css/base.css?after" rel="stylesheet">
     <link href="./css/common.css?after" rel="stylesheet">
     <link href="./css/main.css?after" rel="stylesheet">
+    <link href="./css/mypage.css?after" rel="stylesheet">
+    <script>
+        function goPopupShowPickup(game_id){
+            var pop = window.open("/showPickupNotApproved.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
+        }
+        function goPopupShowPickupApproved(game_id){
+            var pop = window.open("/showPickupApproved.jsp?id=" + game_id,"pop","width=600,height=670, scrollbars=yes, resizable=yes, left=200, top=200");
+        }
+    </script>
 </head>
 <body>
     <%
@@ -43,7 +58,91 @@
         <div id="container">
             <!-- 본문 -->
             <div id="content-wrap">
-                
+                <div id="type-of-game">
+                    내가 게스트
+                </div>
+                <div class="away-approve">
+                    <hr>
+                    승인 대기중
+                    <%
+                        PickupApplyDAO pickupApplyDAO = new PickupApplyDAO();
+                        ArrayList<PickupApply> listPA = pickupApplyDAO.getNotAcceptedGamesByUserId(user_id);
+                        ArrayList<Pickup> listP = new ArrayList<Pickup>();
+                        ArrayList<PickupApply> notAcceptListPA = new ArrayList<PickupApply>();
+                        
+                        for(int i = 0; i < listPA.size(); i++) {
+                                ArrayList<PickupApply> listPAGameId = pickupApplyDAO.getPickupGamesByGameId(listPA.get(i).getGame_id_no());
+
+                                int check = 0;
+                                for(int k = 0; k < listPAGameId.size(); k++) {
+                                    if(listPAGameId.get(k).getAccept_status() == 1) {
+                                        check = 1;
+                                        break;
+                                    }
+                                }
+
+                                if(check == 0) {
+                                    listP.add(pickupApplyDAO.getPickupById(listPA.get(i).getGame_id_no()));
+                                }
+                                if(check == 0) {
+                                    notAcceptListPA.add(pickupApplyDAO.getPickupApplyByGameId(listPA.get(i).getGame_id_no()));
+                                }
+                        }
+
+                        if(notAcceptListPA.isEmpty() && listP.isEmpty()) {
+                    %>
+                    <div id="no-game">
+                    승인 대기 중인 경기가 없습니다.
+                    </div>
+                    <%
+                        } else {
+                            for(int j = 0; j < listP.size(); j++) {
+                    %>
+                    <div class="game-exist">
+                        <button type="button" class="game-exist-btn" value="<%=listP.get(j).getId_no()%>" onclick="goPopupShowPickup(this.value)">
+                            <%=listP.get(j).getRoadAddrPart1()%>
+                            —&nbsp<%=listP.get(j).getDate().substring(0,9)%>
+                            —&nbsp<%=listP.get(j).getDate().substring(11,12)%>시
+                            <%=listP.get(j).getDate().substring(14,15)%>분
+                        </button>
+                    </div>
+                    <%
+                            }}
+                    %>
+                </div> 
+                <div class="pickup-approve">
+                    <hr>
+                    승인 완료
+                    <%
+                        ArrayList<PickupApply> acceptedlistPA = pickupApplyDAO.getAcceptedGamesByUserId(user_id);
+                        if(acceptedlistPA.isEmpty()) {
+                    %>
+                    <div id="no-game">
+                    승인 완료된 경기가 없습니다.
+                    </div>
+                    <%
+                        } else {
+                            
+                            for(int i = 0; i < acceptedlistPA.size(); i++) {
+                                ArrayList<Pickup> acceptedlistP = pickupApplyDAO.getGamesByGameId(acceptedlistPA.get(i).getGame_id_no());
+                                for(int j = 0; j < acceptedlistP.size(); j++) {
+                                
+                    %>
+                    <div class="game-exist">
+                        <button type="button" class="game-exist-btn" value="<%=acceptedlistP.get(j).getId_no()%>" onclick="goPopupShowPickupApproved(this.value)">
+                            <%=acceptedlistP.get(j).getRoadAddrPart1()%>
+                            |&nbsp<%=acceptedlistP.get(j).getDate().substring(0,9)%>
+                            |&nbsp<%=acceptedlistP.get(j).getDate().substring(11,12)%>시
+                            <%=acceptedlistP.get(j).getDate().substring(14,15)%>분
+                        </button>
+                    </div>
+                    <%
+                            }}}
+                    %>
+                </div>
+                <div id="matching_btn">
+                    <button type="button" onclick="location.href='./guestWantHome.jsp'">게스트 신청하기</button>
+                </div>
             </div>
             <!-- //본문 -->
             
