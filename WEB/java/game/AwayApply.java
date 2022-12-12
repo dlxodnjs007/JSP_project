@@ -4,6 +4,7 @@ public class AwayApply {
     private int apply_id;
     private int game_id_no;
     private String away_id;
+    private String a_team_name;
     private String away_people;
     private String away_level;
     private String away_age;
@@ -26,6 +27,12 @@ public class AwayApply {
     }
     public void setAway_id(String away_id) {
         this.away_id = away_id;
+    }
+    public String getA_team_name() {
+        return a_team_name;
+    }
+    public void setA_team_name(String a_team_name) {
+        this.a_team_name = a_team_name;
     }
     public String getAway_people() {
         return away_people;

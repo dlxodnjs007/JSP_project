@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="game.HomeWantAwayDAO" %>
-<%@ page import="game.HomeWantAway" %>
+<%@ page import="game.PickupDAO" %>
+<%@ page import="game.Pickup" %>
 <% request.setCharacterEncoding("UTF-8"); %>
 
 <!DOCTYPE html>
@@ -30,39 +30,33 @@
             내가 신청한 게임 - 승인 완료
         </div>
         <%
-            HomeWantAwayDAO homeWantAwayDAO = new HomeWantAwayDAO();
-            HomeWantAway homeWantAway = homeWantAwayDAO.getGameById(game_id);
+            PickupDAO pickupDAO = new PickupDAO();
+            Pickup pickup = pickupDAO.getGameById(game_id);
         %>
         <div class="game-exist">
-            <%=homeWantAway.getH_team_name()%>
+            <%=pickup.getRoadAddrPart1()%>
             <br>
-            <%=homeWantAway.getRoadAddrPart1()%>
+            <%=pickup.getDate().substring(0,9)%>
+            |&nbsp<%=pickup.getDate().substring(11,12)%>시
+            <%=pickup.getDate().substring(14,15)%>분
             <br>
-            <%=homeWantAway.getDate().substring(0,9)%>
-            |&nbsp<%=homeWantAway.getDate().substring(11,12)%>시
-            <%=homeWantAway.getDate().substring(14,15)%>분
+            <%=pickup.getPeople()%>
             <br>
-            <%=homeWantAway.getHome_people()%>
+            <%=pickup.getLevel()%>
             <br>
-            <%=homeWantAway.getHome_age()%>
+            <%=pickup.getAge()%>
             <br>
-            <%=homeWantAway.getHome_uniform()%>
+            <%=pickup.getColor()%>
             <br>
-            <%=homeWantAway.getAway_people()%>
+            <%=pickup.getShower()%>
             <br>
-            <%=homeWantAway.getAway_level()%>
+            <%=pickup.getParking()%>
             <br>
-            <%=homeWantAway.getAway_age()%>
+            <%=pickup.getWarning()%>
             <br>
-            <%=homeWantAway.getShower()%>
-            <br>
-            <%=homeWantAway.getParking()%>
-            <br>
-            <%=homeWantAway.getWarning()%>
-            <br>
-            <form name="post" method="post" action="/applyCancelAction.jsp">
+            <form name="post" method="post" action="/pickupApplyCancelAction.jsp">
                 <input type="text" name="game_id_no" style="display: none;" value="<%=game_id%>">
-                <input type="text" name="away_id" style="display: none;" value="<%=user_id%>">
+                <input type="text" name="guest_id" style="display: none;" value="<%=user_id%>">
                 <button type="submit" class="game-exist-btn">
                     취소
                 </button>

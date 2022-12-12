@@ -1,18 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="game.AwayApplyDAO" %>
-<%@ page import="game.AwayApply" %>
+<%@ page import="game.PickupDAO" %>
+<%@ page import="game.Pickup" %>
 <%@ page import="java.io.PrintWriter" %>
 <% request.setCharacterEncoding("UTF-8"); %>
 
-<jsp:useBean id="away_apply" class="game.AwayApply" scope="page"/>
-<jsp:setProperty name="away_apply" property="game_id_no"/>
-<jsp:setProperty name="away_apply" property="a_team_name"/>
-<jsp:setProperty name="away_apply" property="away_id"/>
-<jsp:setProperty name="away_apply" property="away_people"/>
-<jsp:setProperty name="away_apply" property="away_level"/>
-<jsp:setProperty name="away_apply" property="away_age"/>
-
+<jsp:useBean id="pickup" class="game.Pickup" scope="page"/>
+<jsp:setProperty name="pickup" property="id_no"/>
+<jsp:setProperty name="pickup" property="home_id"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,13 +16,13 @@
 </head>
 <body>
     <%
-        AwayApplyDAO AwayApplyDAO = new AwayApplyDAO();
-        int result = AwayApplyDAO.setApplyAway(away_apply);
-
+        PickupDAO pickupDAO = new PickupDAO();
+        int result = pickupDAO.cancelPickup(pickup.getId_no(), pickup.getHome_id());
+        
         if(result == -1) {
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('데이터베이스 insert 실패')");
+            script.println("alert('픽업게임 삭제 실패')");
             script.println("history.back()");
             script.println("</script>");
         }

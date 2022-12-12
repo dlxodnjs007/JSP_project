@@ -72,6 +72,14 @@
             <input type="text" name="game_id_no" style="display: none;" value="<%=game_id%>">
             <input type="text" name="away_id" style="display: none;" value="<%=user_id%>">
             <dl class="make-game-info">
+                <dt class="essential">내 팀 이름</dt>
+                <dd>
+                    <span class="item-value modify-on">
+                        <input type="text" name="a_team_name" placeholder="팀이름을 입력하세요">
+                    </span>
+                </dd>
+            </dl>
+            <dl class="make-game-info">
                 <dt class="essential">내 팀 인원</dt>
                 <dd>
                     <select class="select-box" name="away_people" form="away_apply">

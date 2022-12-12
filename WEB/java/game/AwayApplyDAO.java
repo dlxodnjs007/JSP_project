@@ -24,14 +24,15 @@ public class AwayApplyDAO {
     }
 
     public int setApplyAway(AwayApply awayApply) {
-        String SQL = "INSERT INTO apply_away_info(game_id_no, away_id, away_people, away_level, away_age) VALUES (?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO apply_away_info(game_id_no, away_id, a_team_name, away_people, away_level, away_age) VALUES (?, ?, ?, ?, ?, ?)";
         try {
             PreparedStatement pstmt = conn.prepareStatement(SQL);
             pstmt.setInt(1, awayApply.getGame_id_no());
             pstmt.setString(2, awayApply.getAway_id());
-            pstmt.setString(3, awayApply.getAway_people());
-            pstmt.setString(4, awayApply.getAway_level());
-            pstmt.setString(5, awayApply.getAway_age());
+            pstmt.setString(3, awayApply.getA_team_name());
+            pstmt.setString(4, awayApply.getAway_people());
+            pstmt.setString(5, awayApply.getAway_level());
+            pstmt.setString(6, awayApply.getAway_age());
 
             return pstmt.executeUpdate();
         } catch (Exception e) {
@@ -100,21 +101,22 @@ public class AwayApplyDAO {
         return false;
     }
 
-    public ArrayList<AwayApply> getGamesByUserId(String home_id) {
+    public ArrayList<AwayApply> getNotAcceptedGamesByUserId(String apply_id) {
         String SQL = "select * from apply_away_info where away_id = ? and accept_status = 0";
         ArrayList<AwayApply> list = new ArrayList<AwayApply>();
         try {
             PreparedStatement pstmt = conn.prepareStatement(SQL);
-            pstmt.setString(1, home_id);
+            pstmt.setString(1, apply_id);
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 AwayApply awayApply = new AwayApply();
                 awayApply.setGame_id_no(rs.getInt(2));
                 awayApply.setAway_id(rs.getString(3));
-                awayApply.setAway_people(rs.getString(4));
-                awayApply.setAway_level(rs.getString(5));
-                awayApply.setAway_age(rs.getString(6));
-                awayApply.setAccept_status(rs.getInt(7));
+                awayApply.setA_team_name(rs.getString(4));
+                awayApply.setAway_people(rs.getString(5));
+                awayApply.setAway_level(rs.getString(6));
+                awayApply.setAway_age(rs.getString(7));
+                awayApply.setAccept_status(rs.getInt(8));
                 list.add(awayApply);
             }
         } catch (Exception e) {
@@ -135,9 +137,10 @@ public class AwayApplyDAO {
                 AwayApply awayApply = new AwayApply();
                 awayApply.setGame_id_no(rs.getInt(2));
                 awayApply.setAway_id(rs.getString(3));
-                awayApply.setAway_people(rs.getString(4));
-                awayApply.setAway_level(rs.getString(5));
-                awayApply.setAway_age(rs.getString(6));
+                awayApply.setA_team_name(rs.getString(4));
+                awayApply.setAway_people(rs.getString(5));
+                awayApply.setAway_level(rs.getString(6));
+                awayApply.setAway_age(rs.getString(7));
                 list.add(awayApply);
             }
         } catch (Exception e) {
@@ -158,17 +161,18 @@ public class AwayApplyDAO {
                 HomeWantAway homeWantAway = new HomeWantAway();
                 homeWantAway.setId(rs.getInt(1));
                 homeWantAway.setHome_id(rs.getString(2));
-                homeWantAway.setRoadAddrPart1(rs.getString(3));
-                homeWantAway.setDate(rs.getString(4));
-                homeWantAway.setHome_people(rs.getString(5));
-                homeWantAway.setHome_age(rs.getString(6));
-                homeWantAway.setHome_uniform(rs.getString(7));
-                homeWantAway.setAway_people(rs.getString(8));
-                homeWantAway.setAway_level(rs.getString(9));
-                homeWantAway.setAway_age(rs.getString(10));
-                homeWantAway.setShower(rs.getString(11));
-                homeWantAway.setParking(rs.getString(12));
-                homeWantAway.setWarning(rs.getString(13));
+                homeWantAway.setH_team_name(rs.getString(3));
+                homeWantAway.setRoadAddrPart1(rs.getString(4));
+                homeWantAway.setDate(rs.getString(5));
+                homeWantAway.setHome_people(rs.getString(6));
+                homeWantAway.setHome_age(rs.getString(7));
+                homeWantAway.setHome_uniform(rs.getString(8));
+                homeWantAway.setAway_people(rs.getString(9));
+                homeWantAway.setAway_level(rs.getString(10));
+                homeWantAway.setAway_age(rs.getString(11));
+                homeWantAway.setShower(rs.getString(12));
+                homeWantAway.setParking(rs.getString(13));
+                homeWantAway.setWarning(rs.getString(14));
                 list.add(homeWantAway);
             }
         } catch (Exception e) {
@@ -188,17 +192,18 @@ public class AwayApplyDAO {
             rs.next();
             homeWantAway.setId(rs.getInt(1));
             homeWantAway.setHome_id(rs.getString(2));
-            homeWantAway.setRoadAddrPart1(rs.getString(3));
-            homeWantAway.setDate(rs.getString(4));
-            homeWantAway.setHome_people(rs.getString(5));
-            homeWantAway.setHome_age(rs.getString(6));
-            homeWantAway.setHome_uniform(rs.getString(7));
-            homeWantAway.setAway_people(rs.getString(8));
-            homeWantAway.setAway_level(rs.getString(9));
-            homeWantAway.setAway_age(rs.getString(10));
-            homeWantAway.setShower(rs.getString(11));
-            homeWantAway.setParking(rs.getString(12));
-            homeWantAway.setWarning(rs.getString(13));
+            homeWantAway.setH_team_name(rs.getString(3));
+            homeWantAway.setRoadAddrPart1(rs.getString(4));
+            homeWantAway.setDate(rs.getString(5));
+            homeWantAway.setHome_people(rs.getString(6));
+            homeWantAway.setHome_age(rs.getString(7));
+            homeWantAway.setHome_uniform(rs.getString(8));
+            homeWantAway.setAway_people(rs.getString(9));
+            homeWantAway.setAway_level(rs.getString(10));
+            homeWantAway.setAway_age(rs.getString(11));
+            homeWantAway.setShower(rs.getString(12));
+            homeWantAway.setParking(rs.getString(13));
+            homeWantAway.setWarning(rs.getString(14));
             return homeWantAway;
         } catch (Exception e) {
             // TODO: handle exception
@@ -207,8 +212,8 @@ public class AwayApplyDAO {
         return homeWantAway;
     }
 
-    public AwayApply getAwayApplyById(int id) {
-        String SQL = "select * from apply_away_info where id_no = ?";
+    public AwayApply getAwayGameByGameId(int id) {
+        String SQL = "select * from apply_away_info where game_id_no = ?";
         AwayApply awayApply = new AwayApply();
         try {
             PreparedStatement pstmt = conn.prepareStatement(SQL);
@@ -218,10 +223,11 @@ public class AwayApplyDAO {
             awayApply.setApply_id(rs.getInt(1));
             awayApply.setGame_id_no(rs.getInt(2));
             awayApply.setAway_id(rs.getString(3));
-            awayApply.setAway_people(rs.getString(4));
-            awayApply.setAway_level(rs.getString(5));
-            awayApply.setAway_age(rs.getString(6));
-            awayApply.setAccept_status(rs.getInt(7));
+            awayApply.setA_team_name(rs.getString(4));
+            awayApply.setAway_people(rs.getString(5));
+            awayApply.setAway_level(rs.getString(6));
+            awayApply.setAway_age(rs.getString(7));
+            awayApply.setAccept_status(rs.getInt(8));
             return awayApply;
         } catch (Exception e) {
             // TODO: handle exception
@@ -229,6 +235,32 @@ public class AwayApplyDAO {
         }
         return awayApply;
     }
+
+    public AwayApply getNotAcceptedApplyByGameIdAndUserId(int game_id, String user_id) {
+        String SQL = "select * from apply_away_info where game_id_no = ? and away_id = ? and accept_status = 0";
+        AwayApply awayApply = new AwayApply();
+        try {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setInt(1, game_id);
+            pstmt.setString(2, user_id);
+            rs = pstmt.executeQuery();
+            rs.next();
+            awayApply.setApply_id(rs.getInt(1));
+            awayApply.setGame_id_no(rs.getInt(2));
+            awayApply.setAway_id(rs.getString(3));
+            awayApply.setA_team_name(rs.getString(4));
+            awayApply.setAway_people(rs.getString(5));
+            awayApply.setAway_level(rs.getString(6));
+            awayApply.setAway_age(rs.getString(7));
+            awayApply.setAccept_status(rs.getInt(8));
+            return awayApply;
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+        return awayApply;
+    }
+
 
     public ArrayList<AwayApply> getAwayGamesByGameId(int game_id) {
         String SQL = "select * from apply_away_info where game_id_no = ?";
@@ -242,10 +274,11 @@ public class AwayApplyDAO {
                 awayApply.setApply_id(rs.getInt(1));
                 awayApply.setGame_id_no(rs.getInt(2));
                 awayApply.setAway_id(rs.getString(3));
-                awayApply.setAway_people(rs.getString(4));
-                awayApply.setAway_level(rs.getString(5));
-                awayApply.setAway_age(rs.getString(6));
-                awayApply.setAccept_status(rs.getInt(7));
+                awayApply.setA_team_name(rs.getString(4));
+                awayApply.setAway_people(rs.getString(5));
+                awayApply.setAway_level(rs.getString(6));
+                awayApply.setAway_age(rs.getString(7));
+                awayApply.setAccept_status(rs.getInt(8));
                 list.add(awayApply);
             }
         } catch (Exception e) {
@@ -254,31 +287,5 @@ public class AwayApplyDAO {
         }
         return list;
     }
-
-    public ArrayList<AwayApply> getAppliedGamesByGameId(int game_id) {
-        String SQL = "select * from apply_away_info where game_id_no = ?";
-        ArrayList<AwayApply> list = new ArrayList<AwayApply>();
-        try {
-            PreparedStatement pstmt = conn.prepareStatement(SQL);
-            pstmt.setInt(1, game_id);
-            rs = pstmt.executeQuery();
-            while (rs.next()) {
-                AwayApply awayApply = new AwayApply();
-                awayApply.setApply_id(rs.getInt(1));
-                awayApply.setGame_id_no(rs.getInt(2));
-                awayApply.setAway_id(rs.getString(3));
-                awayApply.setAway_people(rs.getString(4));
-                awayApply.setAway_level(rs.getString(5));
-                awayApply.setAway_age(rs.getString(6));
-                awayApply.setAccept_status(rs.getInt(7));
-                list.add(awayApply);
-            }
-        } catch (Exception e) {
-            // TODO: handle exception
-            e.printStackTrace();
-        }
-        return list;
-    }
-
     
 }

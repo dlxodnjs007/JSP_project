@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 public class UserDAO {
 
     private Connection conn;
-    private PreparedStatement pstmt;
     private ResultSet rs;
 
     public UserDAO() {
@@ -27,7 +26,7 @@ public class UserDAO {
     public int login(String user_id, String password) {
         String SQL = "SELECT password FROM user WHERE user_id = ?";
         try {
-            pstmt = conn.prepareStatement(SQL);
+            PreparedStatement pstmt = conn.prepareStatement(SQL);;
             pstmt.setString(1, user_id);
             rs = pstmt.executeQuery();
             if (rs.next()) {
@@ -48,7 +47,7 @@ public class UserDAO {
     public int join(User user) {
         String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?, ?)";
         try {
-            pstmt = conn.prepareStatement(SQL);
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
             pstmt.setString(1, user.getUser_id());
             pstmt.setString(2, user.getPassword());
             pstmt.setString(3, user.getName());
@@ -62,5 +61,25 @@ public class UserDAO {
             e.printStackTrace();
         }
         return -1;
+    }
+
+    public User getUserByUserId(String user_id) {
+        String SQL = "select * from user where user_id = ?";
+        User user = new User();
+        try {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, user_id);
+            rs = pstmt.executeQuery();
+            rs.next();
+            user.setUser_id(rs.getString(1));
+            user.setName(rs.getString(3));
+            user.setHeight(rs.getString(5));
+
+            return user;
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+        return user;
     }
 }

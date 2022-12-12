@@ -157,23 +157,23 @@
                resourceName="UserDatabase"/>
       </Realm>
 
-      <Host name="localhost"  appBase="C:\Cap_de\WEB"
+      <Host name="localhost"  appBase="C:\Cap_de\WEB\"
             unpackWARs="true" autoDeploy="true">
 
-        <!-- SingleSignOn valve, share authentication between web applications
+          <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
-        <!--
-        <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
-        -->
+          <!--
+          <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
+          -->
 
-        <!-- Access log processes all example.
+          <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
-        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+          <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
-          <Context docBase="" path=""></Context>
+          <Context path="/" docBase="/" reloadable="true"></Context>
       </Host>
     </Engine>
   </Service>
